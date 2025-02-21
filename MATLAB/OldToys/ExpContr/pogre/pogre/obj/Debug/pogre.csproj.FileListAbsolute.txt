@@ -1,0 +1,9 @@
+D:\ftp\things\pogre\pogre\bin\Debug\pogre.exe
+D:\ftp\things\pogre\pogre\bin\Debug\pogre.pdb
+D:\ftp\things\pogre\pogre\bin\Debug\FlyCapture2Managed.dll
+D:\ftp\things\pogre\pogre\obj\Debug\ResolveAssemblyReference.cache
+D:\ftp\things\pogre\pogre\obj\Debug\pogre.Form1.resources
+D:\ftp\things\pogre\pogre\obj\Debug\pogre.Properties.Resources.resources
+D:\ftp\things\pogre\pogre\obj\Debug\pogre.csproj.GenerateResource.Cache
+D:\ftp\things\pogre\pogre\obj\Debug\pogre.exe
+D:\ftp\things\pogre\pogre\obj\Debug\pogre.pdb

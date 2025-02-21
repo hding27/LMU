@@ -1,0 +1,16 @@
+D:\ftp\things\oo\oocs\oocs\oocs\bin\Debug\oocs.exe
+D:\ftp\things\oo\oocs\oocs\oocs\bin\Debug\oocs.pdb
+D:\ftp\things\oo\oocs\oocs\oocs\obj\Debug\ResolveAssemblyReference.cache
+D:\ftp\things\oo\oocs\oocs\oocs\obj\Debug\WindowsFormsApplication1.Form1.resources
+D:\ftp\things\oo\oocs\oocs\oocs\obj\Debug\WindowsFormsApplication1.Properties.Resources.resources
+D:\ftp\things\oo\oocs\oocs\oocs\obj\Debug\oocs.csproj.GenerateResource.Cache
+D:\ftp\things\oo\oocs\oocs\oocs\obj\Debug\oocs.exe
+D:\ftp\things\oo\oocs\oocs\oocs\obj\Debug\oocs.pdb
+C:\projects\oocs\oocs\obj\Debug\oocs.exe
+C:\projects\oocs\oocs\obj\Debug\oocs.pdb
+C:\projects\oocs\oocs\bin\Debug\oocs.exe
+C:\projects\oocs\oocs\bin\Debug\oocs.pdb
+C:\projects\oocs\oocs\obj\Debug\ResolveAssemblyReference.cache
+C:\projects\oocs\oocs\obj\Debug\WindowsFormsApplication1.Form1.resources
+C:\projects\oocs\oocs\obj\Debug\WindowsFormsApplication1.Properties.Resources.resources
+C:\projects\oocs\oocs\obj\Debug\oocs.csproj.GenerateResource.Cache

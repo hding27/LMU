@@ -1,0 +1,32 @@
+close all
+clear all
+% close all com ports
+if ~isempty(instrfind)
+    fclose(instrfind);
+end
+
+% configure new serial connection
+% to connect motorbox
+mc = serial('/dev/ttyS1',...
+    'BaudRate',115200,...
+    'Terminator','CR/LF',...
+    'TimeOut',2);
+
+% open comport
+fopen(mc);
+%m1 = initMotor(mc,1);
+%m2 = initMotor(mc,2);
+%m3 = initMotor(mc,3);
+
+m4 = initMotor(mc,4);
+%m5 = initMotor(mc,5);
+%m6 = initMotor(mc,6);
+%
+%m7     = initMotor(mc,7);
+%m8     = initMotor(mc,8);
+
+
+%fclose(mc);
+
+
+%%

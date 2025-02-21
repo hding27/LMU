@@ -1,0 +1,152 @@
+SHG FROG
+Grid size is 512
+ 
+*********** Test Field. ************
+Experimental FROG trace loaded from O:\Ludwig\Measurement\20161124\200mbar_500uJ_spec+frog\Frog3\frog.txt
+Number of delay points: 480
+Number of wavelength points: 640
+Delay spacing: 1.022 fs
+Wavelength spacing: 0.124 nm
+Center wavelength: 400 nm
+DataOrder: Wavelength
+Read in as constant Wavelength bins
+ 
+Trace center in delay found at pixel 205.8
+There were -8.22 too many wavelength points.
+Wavelength Center at pixel 432
+Wavelength shift of 13.89 nm.
+ 
+--- 
+Central wavelength of retrieved field is 827.8 nm.
+ 
+Basic
+1   0.015742
+2   0.012813
+3   0.011791
+4   0.011515
+5   0.011473
+6   0.011544
+7   0.011668
+8   0.011798
+9   0.011914
+10   0.012023
+11   0.012109
+12   0.012153
+13   0.012157
+14   0.01213
+ 
+Projections
+15   0.011403
+16   0.011387
+17   0.011384
+18   0.011385
+19   0.011383
+20   0.011383
+21   0.011386
+22   0.011389
+23   0.011392
+24   0.011386
+25   0.011386
+26   0.011389
+27   0.011393
+28   0.011395
+ 
+Proj. - Overstep
+29   0.011389
+30   0.011395
+31   0.011397
+32   0.011398
+33   0.0114
+34   0.011401
+35   0.011404
+36   0.011407
+37   0.01141
+38   0.011412
+ 
+IntenGate
+39   0.011474
+40   0.011989
+41   0.012655
+42   0.011647
+43   0.012865
+44   0.013636
+45   0.01192
+46   0.013255
+47   0.013944
+48   0.012135
+ 
+Expo
+49   0.01149
+50   0.011542
+51   0.011644
+52   0.011847
+53   0.011965
+54   0.01194
+55   0.011782
+56   0.011747
+57   0.012114
+58   0.012487
+ 
+Projections
+59   0.011664
+60   0.011499
+61   0.011467
+62   0.011461
+63   0.011463
+64   0.011466
+65   0.01147
+66   0.011473
+67   0.011476
+68   0.011478
+ 
+Projections
+69   0.011466
+70   0.011433
+71   0.01143
+72   0.011429
+73   0.011428
+74   0.011428
+75   0.011428
+76   0.011427
+77   0.011427
+78   0.011426
+ 
+Basic
+79   0.011474
+80   0.011534
+81   0.011631
+82   0.011767
+83   0.011888
+84   0.011941
+85   0.011933
+86   0.011913
+87   0.011879
+88   0.011861
+ 
+Projections
+89   0.011383
+90   0.011386
+91   0.011389
+92   0.011392
+93   0.011386
+94   0.011386
+95   0.011389
+96   0.011393
+97   0.011395
+98   0.011393
+ 
+Proj. - Overstep
+99   0.011389
+100   0.011395
+ 
+ 
+The minimum FROG error was 0.011383
+ 
+**************** Retrieved Field ******************
+Temporal FWHM: 16.341 fs.
+Spectral FWHM: 46.839 nm.
+Autocorrelation FWHM: 23.535 fs.
+Time-Bandwidth Product - FWHM: 0.32342
+Time-Bandwidth Product - RMS: 2.4668
+Time-Bandwidth Product - Temporal Laplacian: 0.65282
+Time-Bandwidth Product - Spectral Laplacian: 0.82856

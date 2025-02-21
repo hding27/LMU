@@ -1,0 +1,150 @@
+mcc -o tapedrive -W main -d C:\Documents and Settings\Admin\My Documents\software_tapedrive\develop\untitled1\src -T link:exe -v C:\Documents and Settings\Admin\My Documents\software_tapedrive\develop\tapedrive.m 
+mcc -o tapedrive -W main -d C:\Documents and Settings\Admin\My Documents\software_tapedrive\develop\untitled1\src -T link:exe -v C:\Documents and Settings\Admin\My Documents\software_tapedrive\develop\tapedrive.m  
+Compiler version: 4.6 (R2007a) 
+Processing D:\Program Files\MATLAB\R2007a\toolbox\matlab\mcc.enc 
+Processing C:\Documents and Settings\Admin\My Documents\software_tapedrive\develop\tapedrive.fig 
+Processing include files... 
+2 item(s) added. 
+Processing directories installed with MCR... 
+The file C:\Documents and Settings\Admin\My Documents\software_tapedrive\develop\untitled1\src\mccExcludedFiles.log contains a list of functions excluded from the CTF archive. 
+2 item(s) added. 
+Generating MATLAB path for the compiled application... 
+Created 36 path items. 
+Begin validation of MEX files: Tue Mar 15 16:10:17 2011 
+Validating 'D:\Program Files\MATLAB\R2007a\toolbox\compiler\deploy\deploywhich.mexw32'. 
+No conflicting M-file found. 
+Validating 'D:\Program Files\MATLAB\R2007a\toolbox\compiler\deploy\readline.mexw32'. 
+No conflicting M-file found. 
+End validation of MEX files: Tue Mar 15 16:10:17 2011 
+Deleting 2 temporary MEX authorization files. 
+Removing: 'C:\DOCUME~1\Admin\LOCALS~1\Temp\mathworks_tmp_31246_604.auth'. 
+Removing: 'C:\DOCUME~1\Admin\LOCALS~1\Temp\mathworks_tmp_14539_604.auth'. 
+Parsing file "C:\Documents and Settings\Admin\My Documents\software_tapedrive\develop\tapedrive.m" 
+	(Referenced from: "Compiler Command Line"). 
+Parsing file "D:\Program Files\MATLAB\R2007a\toolbox\compiler\deploy\matlabrc.m" 
+	(Referenced from: "Compiler Command Line"). 
+Parsing file "D:\Program Files\MATLAB\R2007a\toolbox\compiler\dirname.m" 
+	(Referenced from: "Compiler Command Line"). 
+Parsing file "D:\Program Files\MATLAB\R2007a\toolbox\compiler\deploy\deployprint.m" 
+	(Referenced from: "Compiler Command Line"). 
+Parsing file "D:\Program Files\MATLAB\R2007a\toolbox\compiler\deploy\printdlg.m" 
+	(Referenced from: "Compiler Command Line"). 
+Parsing file "D:\Program Files\MATLAB\R2007a\toolbox\matlab\strfun\bin2dec.m" 
+	(Referenced from: "C:\Documents and Settings\Admin\My Documents\software_tapedrive\develop\tapedrive.m"). 
+Parsing file "D:\Program Files\MATLAB\R2007a\toolbox\matlab\general\calllib.m" 
+	(Referenced from: "C:\Documents and Settings\Admin\My Documents\software_tapedrive\develop\tapedrive.m"). 
+Parsing file "D:\Program Files\MATLAB\R2007a\toolbox\matlab\iofun\dlmwrite.m" 
+	(Referenced from: "C:\Documents and Settings\Admin\My Documents\software_tapedrive\develop\tapedrive.m"). 
+Parsing file "D:\Program Files\MATLAB\R2007a\toolbox\matlab\guide\gui_mainfcn.m" 
+	(Referenced from: "C:\Documents and Settings\Admin\My Documents\software_tapedrive\develop\tapedrive.m"). 
+Parsing file "D:\Program Files\MATLAB\R2007a\toolbox\matlab\uitools\guidata.m" 
+	(Referenced from: "C:\Documents and Settings\Admin\My Documents\software_tapedrive\develop\tapedrive.m"). 
+Parsing file "D:\Program Files\MATLAB\R2007a\toolbox\matlab\strfun\hex2dec.m" 
+	(Referenced from: "C:\Documents and Settings\Admin\My Documents\software_tapedrive\develop\tapedrive.m"). 
+Parsing file "D:\Program Files\MATLAB\R2007a\toolbox\matlab\general\ispc.m" 
+	(Referenced from: "C:\Documents and Settings\Admin\My Documents\software_tapedrive\develop\tapedrive.m"). 
+Parsing file "D:\Program Files\MATLAB\R2007a\toolbox\matlab\general\libisloaded.m" 
+	(Referenced from: "C:\Documents and Settings\Admin\My Documents\software_tapedrive\develop\tapedrive.m"). 
+Parsing file "D:\Program Files\MATLAB\R2007a\toolbox\matlab\general\loadlibrary.m" 
+	(Referenced from: "C:\Documents and Settings\Admin\My Documents\software_tapedrive\develop\tapedrive.m"). 
+Parsing file "D:\Program Files\MATLAB\R2007a\toolbox\matlab\uitools\msgbox.m" 
+	(Referenced from: "C:\Documents and Settings\Admin\My Documents\software_tapedrive\develop\tapedrive.m"). 
+Parsing file "C:\Documents and Settings\Admin\My Documents\software_tapedrive\develop\mx_inpout32.m" 
+	(Referenced from: "C:\Documents and Settings\Admin\My Documents\software_tapedrive\develop\tapedrive.m"). 
+Parsing file "D:\Program Files\MATLAB\R2007a\toolbox\matlab\strfun\num2str.m" 
+	(Referenced from: "C:\Documents and Settings\Admin\My Documents\software_tapedrive\develop\tapedrive.m"). 
+Parsing file "D:\Program Files\MATLAB\R2007a\toolbox\matlab\strfun\str2num.m" 
+	(Referenced from: "C:\Documents and Settings\Admin\My Documents\software_tapedrive\develop\tapedrive.m"). 
+Parsing file "D:\Program Files\MATLAB\R2007a\toolbox\matlab\iofun\filesep.m" 
+	(Referenced from: "D:\Program Files\MATLAB\R2007a\toolbox\compiler\deploy\matlabrc.m"). 
+Parsing file "D:\Program Files\MATLAB\R2007a\toolbox\compiler\deploy\hgrc.m" 
+	(Referenced from: "D:\Program Files\MATLAB\R2007a\toolbox\compiler\deploy\matlabrc.m"). 
+Parsing file "D:\Program Files\MATLAB\R2007a\toolbox\matlab\codetools\initdesktoputils.m" 
+	(Referenced from: "D:\Program Files\MATLAB\R2007a\toolbox\compiler\deploy\matlabrc.m"). 
+Parsing file "D:\Program Files\MATLAB\R2007a\toolbox\local\initprefs.m" 
+	(Referenced from: "D:\Program Files\MATLAB\R2007a\toolbox\compiler\deploy\matlabrc.m"). 
+Parsing file "D:\Program Files\MATLAB\R2007a\toolbox\matlab\general\isdeployed.m" 
+	(Referenced from: "D:\Program Files\MATLAB\R2007a\toolbox\compiler\deploy\matlabrc.m"). 
+Parsing file "D:\Program Files\MATLAB\R2007a\toolbox\matlab\lang\lasterror.m" 
+	(Referenced from: "D:\Program Files\MATLAB\R2007a\toolbox\compiler\deploy\matlabrc.m"). 
+Parsing file "D:\Program Files\MATLAB\R2007a\toolbox\local\pathdef.m" 
+	(Referenced from: "D:\Program Files\MATLAB\R2007a\toolbox\compiler\deploy\matlabrc.m"). 
+Parsing file "D:\Program Files\MATLAB\R2007a\toolbox\matlab\general\pwd.m" 
+	(Referenced from: "D:\Program Files\MATLAB\R2007a\toolbox\compiler\deploy\matlabrc.m"). 
+Parsing file "D:\Program Files\MATLAB\R2007a\toolbox\matlab\general\recycle.m" 
+	(Referenced from: "D:\Program Files\MATLAB\R2007a\toolbox\compiler\deploy\matlabrc.m"). 
+Parsing file "D:\Program Files\MATLAB\R2007a\toolbox\local\reporterrorlogs.m" 
+	(Referenced from: "D:\Program Files\MATLAB\R2007a\toolbox\compiler\deploy\matlabrc.m"). 
+Parsing file "D:\Program Files\MATLAB\R2007a\toolbox\matlab\strfun\str2double.m" 
+	(Referenced from: "D:\Program Files\MATLAB\R2007a\toolbox\compiler\deploy\matlabrc.m"). 
+Parsing file "D:\Program Files\MATLAB\R2007a\toolbox\matlab\general\usejava.m" 
+	(Referenced from: "D:\Program Files\MATLAB\R2007a\toolbox\compiler\deploy\matlabrc.m"). 
+Parsing file "D:\Program Files\MATLAB\R2007a\toolbox\matlab\iofun\fileparts.m" 
+	(Referenced from: "D:\Program Files\MATLAB\R2007a\toolbox\compiler\dirname.m"). 
+Parsing file "D:\Program Files\MATLAB\R2007a\toolbox\matlab\timefun\datestr.m" 
+	(Referenced from: "D:\Program Files\MATLAB\R2007a\toolbox\compiler\deploy\deployprint.m"). 
+Parsing file "D:\Program Files\MATLAB\R2007a\toolbox\matlab\graphics\getappdata.m" 
+	(Referenced from: "D:\Program Files\MATLAB\R2007a\toolbox\compiler\deploy\deployprint.m"). 
+Parsing file "D:\Program Files\MATLAB\R2007a\toolbox\matlab\datatypes\isfield.m" 
+	(Referenced from: "D:\Program Files\MATLAB\R2007a\toolbox\compiler\deploy\deployprint.m"). 
+Parsing file "D:\Program Files\MATLAB\R2007a\toolbox\matlab\timefun\now.m" 
+	(Referenced from: "D:\Program Files\MATLAB\R2007a\toolbox\compiler\deploy\deployprint.m"). 
+Parsing file "D:\Program Files\MATLAB\R2007a\toolbox\matlab\datatypes\num2cell.m" 
+	(Referenced from: "D:\Program Files\MATLAB\R2007a\toolbox\compiler\deploy\deployprint.m"). 
+Parsing file "D:\Program Files\MATLAB\R2007a\toolbox\matlab\graphics\orient.m" 
+	(Referenced from: "D:\Program Files\MATLAB\R2007a\toolbox\compiler\deploy\deployprint.m"). 
+Parsing file "D:\Program Files\MATLAB\R2007a\toolbox\matlab\graphics\print.m" 
+	(Referenced from: "D:\Program Files\MATLAB\R2007a\toolbox\compiler\deploy\deployprint.m"). 
+Parsing file "D:\Program Files\MATLAB\R2007a\toolbox\matlab\iofun\tempname.m" 
+	(Referenced from: "D:\Program Files\MATLAB\R2007a\toolbox\compiler\deploy\deployprint.m"). 
+Parsing file "D:\Program Files\MATLAB\R2007a\toolbox\matlab\general\path.m" 
+	(Referenced from: "D:\Program Files\MATLAB\R2007a\toolbox\compiler\deploy\printdlg.m"). 
+Parsing file "D:\Program Files\MATLAB\R2007a\toolbox\matlab\general\rmpath.m" 
+	(Referenced from: "D:\Program Files\MATLAB\R2007a\toolbox\compiler\deploy\printdlg.m"). 
+Generating file "C:\Documents and Settings\Admin\My Documents\software_tapedrive\develop\untitled1\src\tapedrive_main.c". 
+Generating file "C:\Documents and Settings\Admin\My Documents\software_tapedrive\develop\untitled1\src\readme.txt". 
+Generating file "C:\Documents and Settings\Admin\My Documents\software_tapedrive\develop\untitled1\src\tapedrive_mcc_component_data.c". 
+Executing command: mbuild -O -v -output "tapedrive" -I"C:\Documents and Settings\Admin\My Documents\software_tapedrive\develop\untitled1\src" "C:\Documents and Settings\Admin\My Documents\software_tapedrive\develop\untitled1\src\tapedrive_main.c" "C:\Documents and Settings\Admin\My Documents\software_tapedrive\develop\untitled1\src\tapedrive_mcc_component_data.c" -link exe -outdir "C:\Documents and Settings\Admin\My Documents\software_tapedrive\develop\untitled1\src" 
+ This is mbuild Copyright 1984-2006 The MathWorks, Inc. 
+ 
+-> Default options filename found in C:\Documents and Settings\Admin\Application Data\MathWorks\MATLAB\R2007a 
+---------------------------------------------------------------- 
+->    Options file           = C:\Documents and Settings\Admin\Application Data\MathWorks\MATLAB\R2007a\compopts.bat 
+->    COMPILER               = lcc 
+->    Compiler flags: 
+         COMPFLAGS           = -c -Zp8 -I"D:\PROGRA~1\MATLAB\R2007a\sys\lcc\include" -noregistrylookup 
+         OPTIMFLAGS          = -DNDEBUG 
+         DEBUGFLAGS          = -g4 
+         arguments           =  "-IC:\Documents and Settings\Admin\My Documents\software_tapedrive\develop\untitled1\src" 
+         Name switch         = -Fo 
+->    Pre-linking commands   =  
+->    LINKER                 = lcclnk 
+->    Link directives: 
+         LINKFLAGS           = -tmpdir "C:\Documents and Settings\Admin\My Documents\software_tapedrive\develop\untitled1\src\." -L"D:\PROGRA~1\MATLAB\R2007a\sys\lcc\lib" -libpath "D:\PROGRA~1\MATLAB\R2007a\extern\lib\win32\lcc" 
+         LINKFLAGSPOST       = mclmcrrt.lib 
+         Name directive      = -o "C:\Documents and Settings\Admin\My Documents\software_tapedrive\develop\untitled1\src\tapedrive.exe" 
+         File link directive =  
+         Lib. link directive =  
+         Rsp file indicator  = @ 
+->    Resource Compiler      =  
+->    Resource Linker        =  
+---------------------------------------------------------------- 
+ 
+ 
+--> "lcc  "-IC:\Documents and Settings\Admin\My Documents\software_tapedrive\develop\untitled1\src" -c -Zp8 -I"D:\PROGRA~1\MATLAB\R2007a\sys\lcc\include" -noregistrylookup -FoC:\DOCUME~1\Admin\LOCALS~1\Temp\mbuild_8BE7DB6C-DD80-4DF9-31B2-674619333F79\tapedrive_main.obj -ID:\PROGRA~1\MATLAB\R2007a\extern\include -DNDEBUG "C:\Documents and Settings\Admin\My Documents\software_tapedrive\develop\untitled1\src\tapedrive_main.c"" 
+ 
+ 
+--> "lcc  "-IC:\Documents and Settings\Admin\My Documents\software_tapedrive\develop\untitled1\src" -c -Zp8 -I"D:\PROGRA~1\MATLAB\R2007a\sys\lcc\include" -noregistrylookup -FoC:\DOCUME~1\Admin\LOCALS~1\Temp\mbuild_8BE7DB6C-DD80-4DF9-31B2-674619333F79\tapedrive_mcc_component_data.obj -ID:\PROGRA~1\MATLAB\R2007a\extern\include -DNDEBUG "C:\Documents and Settings\Admin\My Documents\software_tapedrive\develop\untitled1\src\tapedrive_mcc_component_data.c"" 
+ 
+    Contents of C:\DOCUME~1\Admin\LOCALS~1\Temp\mbuild_8BE7DB6C-DD80-4DF9-31B2-674619333F79\mbuild_tmp.rsp: 
+  C:\DOCUME~1\Admin\LOCALS~1\Temp\mbuild_8BE7DB6C-DD80-4DF9-31B2-674619333F79\tapedrive_main.obj  C:\DOCUME~1\Admin\LOCALS~1\Temp\mbuild_8BE7DB6C-DD80-4DF9-31B2-674619333F79\tapedrive_mcc_component_data.obj 
+ 
+ 
+--> "lcclnk -o "C:\Documents and Settings\Admin\My Documents\software_tapedrive\develop\untitled1\src\tapedrive.exe" -tmpdir "C:\Documents and Settings\Admin\My Documents\software_tapedrive\develop\untitled1\src\." -L"D:\PROGRA~1\MATLAB\R2007a\sys\lcc\lib" -libpath "D:\PROGRA~1\MATLAB\R2007a\extern\lib\win32\lcc"  @C:\DOCUME~1\Admin\LOCALS~1\Temp\mbuild_8BE7DB6C-DD80-4DF9-31B2-674619333F79\mbuild_tmp.rsp  mclmcrrt.lib" 
+ 
+ 
+--> "if exist C:\DOCUME~1\Admin\LOCALS~1\Temp\mbuild_8BE7DB6C-DD80-4DF9-31B2-674619333F79\templib.def del C:\DOCUME~1\Admin\LOCALS~1\Temp\mbuild_8BE7DB6C-DD80-4DF9-31B2-674619333F79\templib.def" 
+ 
+ 
+--> "if exist %LIB_NAME_stub.obj del %LIB_NAME_stub.obj" 
+ 

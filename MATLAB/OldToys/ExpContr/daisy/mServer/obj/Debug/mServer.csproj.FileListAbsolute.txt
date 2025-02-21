@@ -1,0 +1,40 @@
+C:\Documents and Settings\Admin\My Documents\Visual Studio 2008\Projects\mServer\mServer\bin\Debug\mServer.exe
+C:\Documents and Settings\Admin\My Documents\Visual Studio 2008\Projects\mServer\mServer\bin\Debug\mServer.pdb
+C:\Documents and Settings\Admin\My Documents\Visual Studio 2008\Projects\mServer\mServer\obj\Debug\ResolveAssemblyReference.cache
+C:\Documents and Settings\Admin\My Documents\Visual Studio 2008\Projects\mServer\mServer\obj\Debug\WindowsFormsApplication1.Properties.Resources.resources
+C:\Documents and Settings\Admin\My Documents\Visual Studio 2008\Projects\mServer\mServer\obj\Debug\mServer.csproj.GenerateResource.Cache
+C:\Documents and Settings\Admin\My Documents\Visual Studio 2008\Projects\mServer\mServer\obj\Debug\mServer.exe
+C:\Documents and Settings\Admin\My Documents\Visual Studio 2008\Projects\mServer\mServer\obj\Debug\mServer.pdb
+C:\Documents and Settings\Admin\My Documents\Visual Studio 2008\Projects\mServer\mServer\obj\Debug\WindowsFormsApplication13.Form1.resources
+C:\Documents and Settings\kostya\Мои документы\Visual Studio 2008\Projects\mServer\mServer\obj\Debug\mServer.exe
+C:\Documents and Settings\kostya\Мои документы\Visual Studio 2008\Projects\mServer\mServer\obj\Debug\mServer.pdb
+C:\Documents and Settings\kostya\Мои документы\Visual Studio 2008\Projects\mServer\mServer\bin\Debug\mServer.exe
+C:\Documents and Settings\kostya\Мои документы\Visual Studio 2008\Projects\mServer\mServer\bin\Debug\mServer.pdb
+C:\Documents and Settings\kostya\Мои документы\Visual Studio 2008\Projects\mServer\mServer\obj\Debug\ResolveAssemblyReference.cache
+C:\Documents and Settings\kostya\Мои документы\Visual Studio 2008\Projects\mServer\mServer\obj\Debug\WindowsFormsApplication13.Form1.resources
+C:\Documents and Settings\kostya\Мои документы\Visual Studio 2008\Projects\mServer\mServer\obj\Debug\WindowsFormsApplication1.Properties.Resources.resources
+C:\Documents and Settings\kostya\Мои документы\Visual Studio 2008\Projects\mServer\mServer\obj\Debug\mServer.csproj.GenerateResource.Cache
+C:\projects\daZZscope\mServer\mServer\obj\Debug\mServer.exe
+C:\projects\daZZscope\mServer\mServer\obj\Debug\mServer.pdb
+C:\projects\daZZscope\mServer\mServer\bin\Debug\mServer.exe
+C:\projects\daZZscope\mServer\mServer\bin\Debug\mServer.pdb
+C:\projects\daZZscope\mServer\mServer\obj\Debug\ResolveAssemblyReference.cache
+C:\projects\daZZscope\mServer\mServer\obj\Debug\WindowsFormsApplication13.Form1.resources
+C:\projects\daZZscope\mServer\mServer\obj\Debug\WindowsFormsApplication1.Properties.Resources.resources
+C:\projects\daZZscope\mServer\mServer\obj\Debug\mServer.csproj.GenerateResource.Cache
+D:\ftp\things\daisy\mServer\obj\Debug\mServer.exe
+D:\ftp\things\daisy\mServer\obj\Debug\mServer.pdb
+D:\ftp\things\daisy\mServer\obj\Debug\ResolveAssemblyReference.cache
+D:\ftp\things\daisy\mServer\obj\Debug\WindowsFormsApplication13.Form1.resources
+D:\ftp\things\daisy\mServer\obj\Debug\WindowsFormsApplication1.Properties.Resources.resources
+D:\ftp\things\daisy\mServer\obj\Debug\mServer.csproj.GenerateResource.Cache
+D:\ftp\things\daisy\mServer\bin\Debug\mServer.exe
+D:\ftp\things\daisy\mServer\bin\Debug\mServer.pdb
+C:\projects\daisy\mServer\obj\Debug\mServer.exe
+C:\projects\daisy\mServer\obj\Debug\mServer.pdb
+C:\projects\daisy\mServer\bin\Debug\mServer.exe
+C:\projects\daisy\mServer\bin\Debug\mServer.pdb
+C:\projects\daisy\mServer\obj\Debug\ResolveAssemblyReference.cache
+C:\projects\daisy\mServer\obj\Debug\WindowsFormsApplication13.Form1.resources
+C:\projects\daisy\mServer\obj\Debug\WindowsFormsApplication1.Properties.Resources.resources
+C:\projects\daisy\mServer\obj\Debug\mServer.csproj.GenerateResource.Cache

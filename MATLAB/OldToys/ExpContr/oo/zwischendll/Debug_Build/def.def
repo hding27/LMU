@@ -1,0 +1,5 @@
+LIBRARY     PROJECT2.DLL
+
+EXPORTS
+    ___CPPdebugHook                @2   ; ___CPPdebugHook
+    try1                           @1   ; try1

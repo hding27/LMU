@@ -1,0 +1,196 @@
+record(ai,"EDAQ:NSHOT")
+{
+	field(DESC,"shot number")
+	field(PINI,"YES")
+}
+
+record(ai,"EDAQ:NRUN")
+{
+	field(DESC,"run number")
+	field(PINI,"YES")
+}
+
+record(ai,"EDAQ:CDY:PRESS")
+{
+	field(DESC,"cindy pressure")
+	field(EGU,"mbar")
+	field(PINI,"YES")
+}
+
+record(ai,"EDAQ:XSPEC:PRESS")
+{
+	field(DESC,"xray spectrometer pressure")
+	field(EGU,"mbar")
+	field(PINI,"YES")
+}
+
+record(waveform,"EDAQ:IMG")
+{
+	field(NELM,1228800)
+	field(FTVL,"SHORT")
+	field(PINI,"YES")
+}
+
+record(waveform,"EDAQ:CAM:BEAST:FRONT:WVF1")
+{
+	field(NELM,307200)
+	field(FTVL,"SHORT")
+	field(PINI,"YES")
+	field(DESC,"Beast Front Alignment, RAW Img Part1")
+}
+
+record(waveform,"EDAQ:CAM:BEAST:FRONT:WVF2")
+{
+	field(NELM,307200)
+	field(FTVL,"SHORT")
+	field(PINI,"YES")
+	field(DESC,"Beast Front Alignment, RAW Img Part2")
+}
+
+record(waveform,"EDAQ:CAM:BEAST:FRONT:WVF3")
+{
+	field(NELM,307200)
+	field(FTVL,"SHORT")
+	field(PINI,"YES")
+	field(DESC,"Beast Front Alignment, RAW Img Part3")
+}
+
+record(waveform,"EDAQ:CAM:BEAST:FRONT:WVF4")
+{
+	field(NELM,307200)
+	field(FTVL,"SHORT")
+	field(PINI,"YES")
+	field(DESC,"Beast Front Alignmen, RAW Img Part4")
+}
+
+record(ai,"EDAQ:CAM:BEAST:FRONT:X")
+{
+	field(DESC,"Beast Front Alignment, Image Width")
+	field(EGU,"pixel")
+	field(PINI,"YES")
+}
+
+record(ai,"EDAQ:CAM:BEAST:FRONT:Y")
+{
+	field(DESC,"Beast Front Alignment, Image Height")
+	field(EGU,"pixel")
+	field(PINI,"YES")
+}
+
+record(waveform,"EDAQ:CAM:BEAST:REAR:WVF1")
+{
+	field(NELM,307200)
+	field(FTVL,"SHORT")
+	field(PINI,"YES")
+	field(DESC,"Beast Rear Alignment, RAW Img Part1")
+}
+
+record(waveform,"EDAQ:CAM:BEAST:REAR:WVF2")
+{
+	field(NELM,307200)
+	field(FTVL,"SHORT")
+	field(PINI,"YES")
+	field(DESC,"Beast Rear Alignment, RAW Img Part2")
+}
+
+record(waveform,"EDAQ:CAM:BEAST:REAR:WVF3")
+{
+	field(NELM,307200)
+	field(FTVL,"SHORT")
+	field(PINI,"YES")
+	field(DESC,"Beast Rear Alignment, RAW Img Part3")
+}
+
+record(waveform,"EDAQ:CAM:BEAST:REAR:WVF4")
+{
+	field(NELM,307200)
+	field(FTVL,"SHORT")
+	field(PINI,"YES")
+	field(DESC,"Beast Rear Alignment, RAW Img Part4")
+}
+
+record(ai,"EDAQ:CAM:BEAST:REAR:X")
+{
+	field(DESC,"Beast Rear Alignment, Image Width")
+	field(EGU,"pixel")
+	field(PINI,"YES")
+}
+
+record(ai,"EDAQ:CAM:BEAST:REAR:Y")
+{
+	field(DESC,"Beast Rear Alignment, Image Height")
+	field(EGU,"pixel")
+	field(PINI,"YES")
+}
+
+record(waveform,"EDAQ:CAM:LPOINTING:WVF")
+{
+	field(NELM,307200)
+	field(FTVL,"SHORT")
+	field(PINI,"YES")
+	field(DESC,"Laser Pointing, RAW Image")
+}
+
+record(ai,"EDAQ:CAM:LPOINTING:X")
+{
+	field(DESC,"Laser Pointing, Image Width")
+	field(EGU,"pixel")
+	field(PINI,"YES")
+}
+
+record(ai,"EDAQ:CAM:LPOINTING:Y")
+{
+	field(DESC,"Laser Pointing, Image Height")
+	field(EGU,"pixel")
+	field(PINI,"YES")
+}
+
+record(waveform,"EDAQ:CAP:PRESS:T")
+{
+	field(DESC,"Capillary Pressure - time axis")
+	field(PINI,"YES")
+	field(NELM,200000)
+	field(EGU,"ms")
+	field(FTVL,"DOUBLE")
+}
+
+record(waveform,"EDAQ:CAP:PRESS:P")
+{
+	field(DESC,"Capillary Pressure - pressure")
+	field(PINI,"YES")
+	field(NELM,200000)
+	field(EGU,"mbar")
+	field(FTVL,"DOUBLE")
+}
+
+record(waveform,"EDAQ:CAM:EPOINTING:WVF1")
+{
+	field(NELM,307200)
+	field(FTVL,"SHORT")
+	field(PINI,"YES")
+	field(DESC,"Electron Pointing, RAW Img Part1")
+}
+
+record(waveform,"EDAQ:CAM:EPOINTING:WVF2")
+{
+	field(NELM,307200)
+	field(FTVL,"SHORT")
+	field(PINI,"YES")
+	field(DESC,"Electron Pointing, RAW Img Part2")
+}
+
+record(waveform,"EDAQ:CAM:EPOINTING:WVF3")
+{
+	field(NELM,307200)
+	field(FTVL,"SHORT")
+	field(PINI,"YES")
+	field(DESC,"Electron Pointing, RAW Img Part3")
+}
+
+record(waveform,"EDAQ:CAM:EPOINTING:WVF4")
+{
+	field(NELM,307200)
+	field(FTVL,"SHORT")
+	field(PINI,"YES")
+	field(DESC,"Electron Pointing, RAW Img Part4")
+}

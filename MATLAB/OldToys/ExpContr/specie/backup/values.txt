@@ -1,0 +1,13 @@
+charge_calib:	1.522e-005
+tritium_length:	0.01
+tritium_offset:	0.14
+roi_l:	578.736
+roi_r:	1240.33
+roi_t:	470.927
+roi_b:	589.081
+ron_l:	888.363
+ron_r:	1250.92
+ron_t:	698.483
+ron_b:	886.654
+tri_l:	708.409
+tri_r:	732.226

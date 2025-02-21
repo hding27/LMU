@@ -1,0 +1,8 @@
+%CALCESIG Calculates Esig for FROG.
+%	CALCESIG(P,G) calculates Esig(t,tau) for the given probe pulse, P, 
+%	and gate pulse, G.
+%
+%	CALCESIG(P,G,N) same as above, but increases the length of the tau dimention by the
+%	factor N.  N would normally be either 1 or 2 and defaults to 2.
+
+%	$Id: CalcEsig.m,v 1.1 2006-11-11 00:15:29 pablo Exp $

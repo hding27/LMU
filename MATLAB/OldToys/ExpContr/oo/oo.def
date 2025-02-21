@@ -1,0 +1,1195 @@
+LIBRARY     OOIDRV32.DLL
+
+EXPORTS
+    ADC1000USB_DAC_Initialize      @81   @0   ; ADC1000USB_DAC_Initialize
+    ADC1000USB_DAC_Initialize_stdcall @504  @1   ; ADC1000USB_DAC_Initialize_stdcall
+    ADC1000USB_DAC_ReadValue       @82   @2   ; ADC1000USB_DAC_ReadValue
+    ADC1000USB_DAC_ReadValue_stdcall @505  @3   ; ADC1000USB_DAC_ReadValue_stdcall
+    ADC1000USB_DAC_WriteValue      @83   @4   ; ADC1000USB_DAC_WriteValue
+    ADC1000USB_DAC_WriteValue_stdcall @506  @5   ; ADC1000USB_DAC_WriteValue_stdcall
+    ADC1000USB_GetCoefficients     @84   @6   ; ADC1000USB_GetCoefficients
+    ADC1000USB_GetCoefficients_LVD @85   @7   ; ADC1000USB_GetCoefficients_LVD
+    ADC1000USB_GetCoefficients_stdcall @500  @8   ; ADC1000USB_GetCoefficients_stdcall
+    ADC1000USB_GetFirmwareVersion  @86   @9   ; ADC1000USB_GetFirmwareVersion
+    ADC1000USB_GetFirmwareVersion_stdcall @503  @10  ; ADC1000USB_GetFirmwareVersion_stdcall
+    ADC1000USB_IdentifyADC1000USB  @87   @11  ; ADC1000USB_IdentifyADC1000USB
+    ADC1000USB_IdentifyADC1000USB_stdcall @502  @12  ; ADC1000USB_IdentifyADC1000USB_stdcall
+    ADC1000USB_SetCoefficients     @88   @13  ; ADC1000USB_SetCoefficients
+    ADC1000USB_SetCoefficients_LVD @89   @14  ; ADC1000USB_SetCoefficients_LVD
+    ADC1000USB_SetCoefficients_stdcall @501  @15  ; ADC1000USB_SetCoefficients_stdcall
+    ADC2000PCI_AnalogOut           @90   @16  ; ADC2000PCI_AnalogOut
+    ADC2000PCI_AnalogOut_stdcall   @602  @17  ; ADC2000PCI_AnalogOut_stdcall
+    ADC2000PCI_IsPCIPlus           @91   @18  ; ADC2000PCI_IsPCIPlus
+    ADC2000PCI_IsPCIPlus_stdcall   @603  @19  ; ADC2000PCI_IsPCIPlus_stdcall
+    ADC2000PCI_ReadDIO             @92   @20  ; ADC2000PCI_ReadDIO
+    ADC2000PCI_ReadDIO_stdcall     @601  @21  ; ADC2000PCI_ReadDIO_stdcall
+    ADC2000PCI_WriteDIO            @93   @22  ; ADC2000PCI_WriteDIO
+    ADC2000PCI_WriteDIO_stdcall    @600  @23  ; ADC2000PCI_WriteDIO_stdcall
+    HR2000Plus_GetBoardTemperature @94   @24  ; HR2000Plus_GetBoardTemperature
+    HR2000Plus_GetBoardTemperature_stdcall @1306 @25  ; HR2000Plus_GetBoardTemperature_stdcall
+    HR2000Plus_GetCoefficients     @95   @26  ; HR2000Plus_GetCoefficients
+    HR2000Plus_GetCoefficients_LVD @96   @27  ; HR2000Plus_GetCoefficients_LVD
+    HR2000Plus_GetCoefficients_stdcall @1304 @28  ; HR2000Plus_GetCoefficients_stdcall
+    HR2000Plus_GetContinuousStrobeBase @97   @29  ; HR2000Plus_GetContinuousStrobeBase
+    HR2000Plus_GetContinuousStrobeBaseTime @98   @30  ; HR2000Plus_GetContinuousStrobeBaseTime
+    HR2000Plus_GetContinuousStrobeBaseTime_stdcall @1359 @31  ; HR2000Plus_GetContinuousStrobeBaseTime_stdcall
+    HR2000Plus_GetContinuousStrobeBase_stdcall @1322 @32  ; HR2000Plus_GetContinuousStrobeBase_stdcall
+    HR2000Plus_GetContinuousStrobeClock @99   @33  ; HR2000Plus_GetContinuousStrobeClock
+    HR2000Plus_GetContinuousStrobeClock_stdcall @1324 @34  ; HR2000Plus_GetContinuousStrobeClock_stdcall
+    HR2000Plus_GetContinuousStrobeTime @100  @35  ; HR2000Plus_GetContinuousStrobeTime
+    HR2000Plus_GetContinuousStrobeTime_stdcall @1360 @36  ; HR2000Plus_GetContinuousStrobeTime_stdcall
+    HR2000Plus_GetFPGAFirmwareVersion @169  @37  ; HR2000Plus_GetFPGAFirmwareVersion
+    HR2000Plus_GetFPGAFirmwareVersion_stdcall @1321 @38  ; HR2000Plus_GetFPGAFirmwareVersion_stdcall
+    HR2000Plus_GetFirmwareVersion  @170  @39  ; HR2000Plus_GetFirmwareVersion
+    HR2000Plus_GetFirmwareVersion_stdcall @1301 @40  ; HR2000Plus_GetFirmwareVersion_stdcall
+    HR2000Plus_GetGPIODataReg      @171  @41  ; HR2000Plus_GetGPIODataReg
+    HR2000Plus_GetGPIODataReg_stdcall @1354 @42  ; HR2000Plus_GetGPIODataReg_stdcall
+    HR2000Plus_GetGPIOIO           @172  @43  ; HR2000Plus_GetGPIOIO
+    HR2000Plus_GetGPIOIO_stdcall   @1347 @44  ; HR2000Plus_GetGPIOIO_stdcall
+    HR2000Plus_GetGPIOMux          @173  @45  ; HR2000Plus_GetGPIOMux
+    HR2000Plus_GetGPIOMux_stdcall  @1342 @46  ; HR2000Plus_GetGPIOMux_stdcall
+    HR2000Plus_GetGPIOPinData      @174  @47  ; HR2000Plus_GetGPIOPinData
+    HR2000Plus_GetGPIOPinData_stdcall @1355 @48  ; HR2000Plus_GetGPIOPinData_stdcall
+    HR2000Plus_GetGPIOPinIO        @175  @49  ; HR2000Plus_GetGPIOPinIO
+    HR2000Plus_GetGPIOPinIO_stdcall @1349 @50  ; HR2000Plus_GetGPIOPinIO_stdcall
+    HR2000Plus_GetGPIOPinMux       @176  @51  ; HR2000Plus_GetGPIOPinMux
+    HR2000Plus_GetGPIOPinMux_stdcall @1346 @52  ; HR2000Plus_GetGPIOPinMux_stdcall
+    HR2000Plus_GetHardwareTriggerDelay @177  @53  ; HR2000Plus_GetHardwareTriggerDelay
+    HR2000Plus_GetHardwareTriggerDelayTime @178  @54  ; HR2000Plus_GetHardwareTriggerDelayTime
+    HR2000Plus_GetHardwareTriggerDelayTime_stdcall @1361 @55  ; HR2000Plus_GetHardwareTriggerDelayTime_stdcall
+    HR2000Plus_GetHardwareTriggerDelay_stdcall @1332 @56  ; HR2000Plus_GetHardwareTriggerDelay_stdcall
+    HR2000Plus_GetHardwareTriggerMode @179  @57  ; HR2000Plus_GetHardwareTriggerMode
+    HR2000Plus_GetHardwareTriggerMode_stdcall @1334 @58  ; HR2000Plus_GetHardwareTriggerMode_stdcall
+    HR2000Plus_GetIntegrationClockTime @180  @59  ; HR2000Plus_GetIntegrationClockTime
+    HR2000Plus_GetIntegrationClockTime_stdcall @1358 @60  ; HR2000Plus_GetIntegrationClockTime_stdcall
+    HR2000Plus_GetIntegrationClockTimer @181  @61  ; HR2000Plus_GetIntegrationClockTimer
+    HR2000Plus_GetIntegrationClockTimer_stdcall @1328 @62  ; HR2000Plus_GetIntegrationClockTimer_stdcall
+    HR2000Plus_GetIntegrationTimeBaseClock @182  @63  ; HR2000Plus_GetIntegrationTimeBaseClock
+    HR2000Plus_GetIntegrationTimeBaseClock_stdcall @1326 @64  ; HR2000Plus_GetIntegrationTimeBaseClock_stdcall
+    HR2000Plus_GetMasterClockDivisor @183  @65  ; HR2000Plus_GetMasterClockDivisor
+    HR2000Plus_GetMasterClockDivisor_stdcall @1319 @66  ; HR2000Plus_GetMasterClockDivisor_stdcall
+    HR2000Plus_GetMasterClockTime  @184  @67  ; HR2000Plus_GetMasterClockTime
+    HR2000Plus_GetMasterClockTime_stdcall @1357 @68  ; HR2000Plus_GetMasterClockTime_stdcall
+    HR2000Plus_GetPSOCVersion      @185  @69  ; HR2000Plus_GetPSOCVersion
+    HR2000Plus_GetPSOCVersion_stdcall @1316 @70  ; HR2000Plus_GetPSOCVersion_stdcall
+    HR2000Plus_GetShutterClock     @186  @71  ; HR2000Plus_GetShutterClock
+    HR2000Plus_GetShutterClock_stdcall @1330 @72  ; HR2000Plus_GetShutterClock_stdcall
+    HR2000Plus_GetSingleStrobeHigh @187  @73  ; HR2000Plus_GetSingleStrobeHigh
+    HR2000Plus_GetSingleStrobeHighTime @188  @74  ; HR2000Plus_GetSingleStrobeHighTime
+    HR2000Plus_GetSingleStrobeHighTime_stdcall @1362 @75  ; HR2000Plus_GetSingleStrobeHighTime_stdcall
+    HR2000Plus_GetSingleStrobeHigh_stdcall @1336 @76  ; HR2000Plus_GetSingleStrobeHigh_stdcall
+    HR2000Plus_GetSingleStrobeLow  @189  @77  ; HR2000Plus_GetSingleStrobeLow
+    HR2000Plus_GetSingleStrobeLowTime @190  @78  ; HR2000Plus_GetSingleStrobeLowTime
+    HR2000Plus_GetSingleStrobeLowTime_stdcall @1363 @79  ; HR2000Plus_GetSingleStrobeLowTime_stdcall
+    HR2000Plus_GetSingleStrobeLow_stdcall @1338 @80  ; HR2000Plus_GetSingleStrobeLow_stdcall
+    HR2000Plus_GetStoredString     @191  @81  ; HR2000Plus_GetStoredString
+    HR2000Plus_GetStoredString_stdcall @1303 @82  ; HR2000Plus_GetStoredString_stdcall
+    HR2000Plus_GetStrobeEnableFPGA @192  @83  ; HR2000Plus_GetStrobeEnableFPGA
+    HR2000Plus_GetStrobeEnableFPGA_stdcall @1340 @84  ; HR2000Plus_GetStrobeEnableFPGA_stdcall
+    HR2000Plus_IdentifyHR2000Plus  @193  @85  ; HR2000Plus_IdentifyHR2000Plus
+    HR2000Plus_IdentifyHR2000Plus_stdcall @1300 @86  ; HR2000Plus_IdentifyHR2000Plus_stdcall
+    HR2000Plus_ReadAnalogInput     @194  @87  ; HR2000Plus_ReadAnalogInput
+    HR2000Plus_ReadAnalogInputVoltage @195  @88  ; HR2000Plus_ReadAnalogInputVoltage
+    HR2000Plus_ReadAnalogInputVoltage_stdcall @1313 @89  ; HR2000Plus_ReadAnalogInputVoltage_stdcall
+    HR2000Plus_ReadAnalogInput_stdcall @1312 @90  ; HR2000Plus_ReadAnalogInput_stdcall
+    HR2000Plus_ReadFPGA            @196  @91  ; HR2000Plus_ReadFPGA
+    HR2000Plus_ReadFPGA_stdcall    @1318 @92  ; HR2000Plus_ReadFPGA_stdcall
+    HR2000Plus_ReadI2C             @197  @93  ; HR2000Plus_ReadI2C
+    HR2000Plus_ReadI2C_stdcall     @1309 @94  ; HR2000Plus_ReadI2C_stdcall
+    HR2000Plus_ReadSPI             @198  @95  ; HR2000Plus_ReadSPI
+    HR2000Plus_ReadSPI_stdcall     @1311 @96  ; HR2000Plus_ReadSPI_stdcall
+    HR2000Plus_SetAnalogOutput     @199  @97  ; HR2000Plus_SetAnalogOutput
+    HR2000Plus_SetAnalogOutputVoltage @200  @98  ; HR2000Plus_SetAnalogOutputVoltage
+    HR2000Plus_SetAnalogOutputVoltage_stdcall @1315 @99  ; HR2000Plus_SetAnalogOutputVoltage_stdcall
+    HR2000Plus_SetAnalogOutput_stdcall @1314 @100 ; HR2000Plus_SetAnalogOutput_stdcall
+    HR2000Plus_SetCoefficients     @201  @101 ; HR2000Plus_SetCoefficients
+    HR2000Plus_SetCoefficients_LVD @202  @102 ; HR2000Plus_SetCoefficients_LVD
+    HR2000Plus_SetCoefficients_stdcall @1305 @103 ; HR2000Plus_SetCoefficients_stdcall
+    HR2000Plus_SetContinuousStrobeBase @203  @104 ; HR2000Plus_SetContinuousStrobeBase
+    HR2000Plus_SetContinuousStrobeBase_stdcall @1323 @105 ; HR2000Plus_SetContinuousStrobeBase_stdcall
+    HR2000Plus_SetContinuousStrobeClock @204  @106 ; HR2000Plus_SetContinuousStrobeClock
+    HR2000Plus_SetContinuousStrobeClock_stdcall @1325 @107 ; HR2000Plus_SetContinuousStrobeClock_stdcall
+    HR2000Plus_SetGPIODataReg      @205  @108 ; HR2000Plus_SetGPIODataReg
+    HR2000Plus_SetGPIODataReg_stdcall @1353 @109 ; HR2000Plus_SetGPIODataReg_stdcall
+    HR2000Plus_SetGPIOIO           @206  @110 ; HR2000Plus_SetGPIOIO
+    HR2000Plus_SetGPIOIO_stdcall   @1348 @111 ; HR2000Plus_SetGPIOIO_stdcall
+    HR2000Plus_SetGPIOMux          @207  @112 ; HR2000Plus_SetGPIOMux
+    HR2000Plus_SetGPIOMuxAlt       @208  @113 ; HR2000Plus_SetGPIOMuxAlt
+    HR2000Plus_SetGPIOMuxAlt_stdcall @1345 @114 ; HR2000Plus_SetGPIOMuxAlt_stdcall
+    HR2000Plus_SetGPIOMuxReg       @209  @115 ; HR2000Plus_SetGPIOMuxReg
+    HR2000Plus_SetGPIOMuxReg_stdcall @1344 @116 ; HR2000Plus_SetGPIOMuxReg_stdcall
+    HR2000Plus_SetGPIOMux_stdcall  @1343 @117 ; HR2000Plus_SetGPIOMux_stdcall
+    HR2000Plus_SetGPIOPinData      @210  @118 ; HR2000Plus_SetGPIOPinData
+    HR2000Plus_SetGPIOPinData_stdcall @1356 @119 ; HR2000Plus_SetGPIOPinData_stdcall
+    HR2000Plus_SetGPIOPinIO        @211  @120 ; HR2000Plus_SetGPIOPinIO
+    HR2000Plus_SetGPIOPinIO_stdcall @1350 @121 ; HR2000Plus_SetGPIOPinIO_stdcall
+    HR2000Plus_SetGPIOPinInput     @212  @122 ; HR2000Plus_SetGPIOPinInput
+    HR2000Plus_SetGPIOPinInput_stdcall @1352 @123 ; HR2000Plus_SetGPIOPinInput_stdcall
+    HR2000Plus_SetGPIOPinOutput    @213  @124 ; HR2000Plus_SetGPIOPinOutput
+    HR2000Plus_SetGPIOPinOutput_stdcall @1351 @125 ; HR2000Plus_SetGPIOPinOutput_stdcall
+    HR2000Plus_SetHardwareTriggerDelay @214  @126 ; HR2000Plus_SetHardwareTriggerDelay
+    HR2000Plus_SetHardwareTriggerDelay_stdcall @1333 @127 ; HR2000Plus_SetHardwareTriggerDelay_stdcall
+    HR2000Plus_SetHardwareTriggerMode @215  @128 ; HR2000Plus_SetHardwareTriggerMode
+    HR2000Plus_SetHardwareTriggerMode_stdcall @1335 @129 ; HR2000Plus_SetHardwareTriggerMode_stdcall
+    HR2000Plus_SetIntegrationClockTimer @216  @130 ; HR2000Plus_SetIntegrationClockTimer
+    HR2000Plus_SetIntegrationClockTimer_stdcall @1329 @131 ; HR2000Plus_SetIntegrationClockTimer_stdcall
+    HR2000Plus_SetIntegrationTimeBaseClock @217  @132 ; HR2000Plus_SetIntegrationTimeBaseClock
+    HR2000Plus_SetIntegrationTimeBaseClock_stdcall @1327 @133 ; HR2000Plus_SetIntegrationTimeBaseClock_stdcall
+    HR2000Plus_SetMasterClockDivisor @218  @134 ; HR2000Plus_SetMasterClockDivisor
+    HR2000Plus_SetMasterClockDivisor_stdcall @1320 @135 ; HR2000Plus_SetMasterClockDivisor_stdcall
+    HR2000Plus_SetPowerDown        @219  @136 ; HR2000Plus_SetPowerDown
+    HR2000Plus_SetPowerDown_stdcall @1307 @137 ; HR2000Plus_SetPowerDown_stdcall
+    HR2000Plus_SetShutterClock     @220  @138 ; HR2000Plus_SetShutterClock
+    HR2000Plus_SetShutterClock_stdcall @1331 @139 ; HR2000Plus_SetShutterClock_stdcall
+    HR2000Plus_SetSingleStrobeHigh @221  @140 ; HR2000Plus_SetSingleStrobeHigh
+    HR2000Plus_SetSingleStrobeHigh_stdcall @1337 @141 ; HR2000Plus_SetSingleStrobeHigh_stdcall
+    HR2000Plus_SetSingleStrobeLow  @222  @142 ; HR2000Plus_SetSingleStrobeLow
+    HR2000Plus_SetSingleStrobeLow_stdcall @1339 @143 ; HR2000Plus_SetSingleStrobeLow_stdcall
+    HR2000Plus_SetStoredString     @223  @144 ; HR2000Plus_SetStoredString
+    HR2000Plus_SetStoredString_stdcall @1302 @145 ; HR2000Plus_SetStoredString_stdcall
+    HR2000Plus_SetStrobeEnableFPGA @224  @146 ; HR2000Plus_SetStrobeEnableFPGA
+    HR2000Plus_SetStrobeEnableFPGA_stdcall @1341 @147 ; HR2000Plus_SetStrobeEnableFPGA_stdcall
+    HR2000Plus_WriteFPGA           @225  @148 ; HR2000Plus_WriteFPGA
+    HR2000Plus_WriteFPGA_stdcall   @1317 @149 ; HR2000Plus_WriteFPGA_stdcall
+    HR2000Plus_WriteI2C            @226  @150 ; HR2000Plus_WriteI2C
+    HR2000Plus_WriteI2C_stdcall    @1308 @151 ; HR2000Plus_WriteI2C_stdcall
+    HR2000Plus_WriteSPI            @227  @152 ; HR2000Plus_WriteSPI
+    HR2000Plus_WriteSPI_stdcall    @1310 @153 ; HR2000Plus_WriteSPI_stdcall
+    HR2000_GetCoefficients         @228  @154 ; HR2000_GetCoefficients
+    HR2000_GetCoefficients_LVD     @229  @155 ; HR2000_GetCoefficients_LVD
+    HR2000_GetCoefficients_stdcall @700  @156 ; HR2000_GetCoefficients_stdcall
+    HR2000_GetFirmwareVersion      @230  @157 ; HR2000_GetFirmwareVersion
+    HR2000_GetFirmwareVersion_stdcall @703  @158 ; HR2000_GetFirmwareVersion_stdcall
+    HR2000_GetStoredString         @231  @159 ; HR2000_GetStoredString
+    HR2000_GetStoredString_stdcall @705  @160 ; HR2000_GetStoredString_stdcall
+    HR2000_IdentifyHR2000          @232  @161 ; HR2000_IdentifyHR2000
+    HR2000_IdentifyHR2000_stdcall  @702  @162 ; HR2000_IdentifyHR2000_stdcall
+    HR2000_SetCoefficients         @233  @163 ; HR2000_SetCoefficients
+    HR2000_SetCoefficients_LVD     @234  @164 ; HR2000_SetCoefficients_LVD
+    HR2000_SetCoefficients_stdcall @701  @165 ; HR2000_SetCoefficients_stdcall
+    HR2000_SetStoredString         @235  @166 ; HR2000_SetStoredString
+    HR2000_SetStoredString_stdcall @704  @167 ; HR2000_SetStoredString_stdcall
+    HR4000_GetBoardTemperature     @236  @168 ; HR4000_GetBoardTemperature
+    HR4000_GetBoardTemperature_stdcall @1006 @169 ; HR4000_GetBoardTemperature_stdcall
+    HR4000_GetCoefficients         @237  @170 ; HR4000_GetCoefficients
+    HR4000_GetCoefficients_LVD     @238  @171 ; HR4000_GetCoefficients_LVD
+    HR4000_GetCoefficients_stdcall @1004 @172 ; HR4000_GetCoefficients_stdcall
+    HR4000_GetContinuousStrobeBase @239  @173 ; HR4000_GetContinuousStrobeBase
+    HR4000_GetContinuousStrobeBaseTime @240  @174 ; HR4000_GetContinuousStrobeBaseTime
+    HR4000_GetContinuousStrobeBaseTime_stdcall @1059 @175 ; HR4000_GetContinuousStrobeBaseTime_stdcall
+    HR4000_GetContinuousStrobeBase_stdcall @1022 @176 ; HR4000_GetContinuousStrobeBase_stdcall
+    HR4000_GetContinuousStrobeClock @241  @177 ; HR4000_GetContinuousStrobeClock
+    HR4000_GetContinuousStrobeClock_stdcall @1024 @178 ; HR4000_GetContinuousStrobeClock_stdcall
+    HR4000_GetContinuousStrobeTime @242  @179 ; HR4000_GetContinuousStrobeTime
+    HR4000_GetContinuousStrobeTime_stdcall @1060 @180 ; HR4000_GetContinuousStrobeTime_stdcall
+    HR4000_GetFPGAFirmwareVersion  @243  @181 ; HR4000_GetFPGAFirmwareVersion
+    HR4000_GetFPGAFirmwareVersion_stdcall @1021 @182 ; HR4000_GetFPGAFirmwareVersion_stdcall
+    HR4000_GetFirmwareVersion      @244  @183 ; HR4000_GetFirmwareVersion
+    HR4000_GetFirmwareVersion_stdcall @1001 @184 ; HR4000_GetFirmwareVersion_stdcall
+    HR4000_GetGPIODataReg          @245  @185 ; HR4000_GetGPIODataReg
+    HR4000_GetGPIODataReg_stdcall  @1054 @186 ; HR4000_GetGPIODataReg_stdcall
+    HR4000_GetGPIOIO               @246  @187 ; HR4000_GetGPIOIO
+    HR4000_GetGPIOIO_stdcall       @1047 @188 ; HR4000_GetGPIOIO_stdcall
+    HR4000_GetGPIOMux              @247  @189 ; HR4000_GetGPIOMux
+    HR4000_GetGPIOMux_stdcall      @1042 @190 ; HR4000_GetGPIOMux_stdcall
+    HR4000_GetGPIOPinData          @248  @191 ; HR4000_GetGPIOPinData
+    HR4000_GetGPIOPinData_stdcall  @1055 @192 ; HR4000_GetGPIOPinData_stdcall
+    HR4000_GetGPIOPinIO            @249  @193 ; HR4000_GetGPIOPinIO
+    HR4000_GetGPIOPinIO_stdcall    @1049 @194 ; HR4000_GetGPIOPinIO_stdcall
+    HR4000_GetGPIOPinMux           @250  @195 ; HR4000_GetGPIOPinMux
+    HR4000_GetGPIOPinMux_stdcall   @1046 @196 ; HR4000_GetGPIOPinMux_stdcall
+    HR4000_GetHardwareTriggerDelay @251  @197 ; HR4000_GetHardwareTriggerDelay
+    HR4000_GetHardwareTriggerDelayTime @252  @198 ; HR4000_GetHardwareTriggerDelayTime
+    HR4000_GetHardwareTriggerDelayTime_stdcall @1061 @199 ; HR4000_GetHardwareTriggerDelayTime_stdcall
+    HR4000_GetHardwareTriggerDelay_stdcall @1032 @200 ; HR4000_GetHardwareTriggerDelay_stdcall
+    HR4000_GetHardwareTriggerMode  @253  @201 ; HR4000_GetHardwareTriggerMode
+    HR4000_GetHardwareTriggerMode_stdcall @1034 @202 ; HR4000_GetHardwareTriggerMode_stdcall
+    HR4000_GetIntegrationClockTime @254  @203 ; HR4000_GetIntegrationClockTime
+    HR4000_GetIntegrationClockTime_stdcall @1058 @204 ; HR4000_GetIntegrationClockTime_stdcall
+    HR4000_GetIntegrationClockTimer @255  @205 ; HR4000_GetIntegrationClockTimer
+    HR4000_GetIntegrationClockTimer_stdcall @1028 @206 ; HR4000_GetIntegrationClockTimer_stdcall
+    HR4000_GetIntegrationTimeBaseClock @256  @207 ; HR4000_GetIntegrationTimeBaseClock
+    HR4000_GetIntegrationTimeBaseClock_stdcall @1026 @208 ; HR4000_GetIntegrationTimeBaseClock_stdcall
+    HR4000_GetMasterClockDivisor   @257  @209 ; HR4000_GetMasterClockDivisor
+    HR4000_GetMasterClockDivisor_stdcall @1019 @210 ; HR4000_GetMasterClockDivisor_stdcall
+    HR4000_GetMasterClockTime      @258  @211 ; HR4000_GetMasterClockTime
+    HR4000_GetMasterClockTime_stdcall @1057 @212 ; HR4000_GetMasterClockTime_stdcall
+    HR4000_GetPSOCVersion          @259  @213 ; HR4000_GetPSOCVersion
+    HR4000_GetPSOCVersion_stdcall  @1016 @214 ; HR4000_GetPSOCVersion_stdcall
+    HR4000_GetShutterClock         @260  @215 ; HR4000_GetShutterClock
+    HR4000_GetShutterClock_stdcall @1030 @216 ; HR4000_GetShutterClock_stdcall
+    HR4000_GetSingleStrobeHigh     @261  @217 ; HR4000_GetSingleStrobeHigh
+    HR4000_GetSingleStrobeHighTime @262  @218 ; HR4000_GetSingleStrobeHighTime
+    HR4000_GetSingleStrobeHighTime_stdcall @1062 @219 ; HR4000_GetSingleStrobeHighTime_stdcall
+    HR4000_GetSingleStrobeHigh_stdcall @1036 @220 ; HR4000_GetSingleStrobeHigh_stdcall
+    HR4000_GetSingleStrobeLow      @263  @221 ; HR4000_GetSingleStrobeLow
+    HR4000_GetSingleStrobeLowTime  @264  @222 ; HR4000_GetSingleStrobeLowTime
+    HR4000_GetSingleStrobeLowTime_stdcall @1063 @223 ; HR4000_GetSingleStrobeLowTime_stdcall
+    HR4000_GetSingleStrobeLow_stdcall @1038 @224 ; HR4000_GetSingleStrobeLow_stdcall
+    HR4000_GetStoredString         @265  @225 ; HR4000_GetStoredString
+    HR4000_GetStoredString_stdcall @1003 @226 ; HR4000_GetStoredString_stdcall
+    HR4000_GetStrobeEnableFPGA     @266  @227 ; HR4000_GetStrobeEnableFPGA
+    HR4000_GetStrobeEnableFPGA_stdcall @1040 @228 ; HR4000_GetStrobeEnableFPGA_stdcall
+    HR4000_IdentifyHR4000          @267  @229 ; HR4000_IdentifyHR4000
+    HR4000_IdentifyHR4000_stdcall  @1000 @230 ; HR4000_IdentifyHR4000_stdcall
+    HR4000_ReadAnalogInput         @268  @231 ; HR4000_ReadAnalogInput
+    HR4000_ReadAnalogInputVoltage  @269  @232 ; HR4000_ReadAnalogInputVoltage
+    HR4000_ReadAnalogInputVoltage_stdcall @1013 @233 ; HR4000_ReadAnalogInputVoltage_stdcall
+    HR4000_ReadAnalogInput_stdcall @1012 @234 ; HR4000_ReadAnalogInput_stdcall
+    HR4000_ReadFPGA                @270  @235 ; HR4000_ReadFPGA
+    HR4000_ReadFPGA_stdcall        @1018 @236 ; HR4000_ReadFPGA_stdcall
+    HR4000_ReadI2C                 @271  @237 ; HR4000_ReadI2C
+    HR4000_ReadI2C_stdcall         @1009 @238 ; HR4000_ReadI2C_stdcall
+    HR4000_ReadSPI                 @272  @239 ; HR4000_ReadSPI
+    HR4000_ReadSPI_stdcall         @1011 @240 ; HR4000_ReadSPI_stdcall
+    HR4000_SetAnalogOutput         @273  @241 ; HR4000_SetAnalogOutput
+    HR4000_SetAnalogOutputVoltage  @274  @242 ; HR4000_SetAnalogOutputVoltage
+    HR4000_SetAnalogOutputVoltage_stdcall @1015 @243 ; HR4000_SetAnalogOutputVoltage_stdcall
+    HR4000_SetAnalogOutput_stdcall @1014 @244 ; HR4000_SetAnalogOutput_stdcall
+    HR4000_SetCoefficients         @275  @245 ; HR4000_SetCoefficients
+    HR4000_SetCoefficients_LVD     @276  @246 ; HR4000_SetCoefficients_LVD
+    HR4000_SetCoefficients_stdcall @1005 @247 ; HR4000_SetCoefficients_stdcall
+    HR4000_SetContinuousStrobeBase @277  @248 ; HR4000_SetContinuousStrobeBase
+    HR4000_SetContinuousStrobeBase_stdcall @1023 @249 ; HR4000_SetContinuousStrobeBase_stdcall
+    HR4000_SetContinuousStrobeClock @278  @250 ; HR4000_SetContinuousStrobeClock
+    HR4000_SetContinuousStrobeClock_stdcall @1025 @251 ; HR4000_SetContinuousStrobeClock_stdcall
+    HR4000_SetGPIODataReg          @279  @252 ; HR4000_SetGPIODataReg
+    HR4000_SetGPIODataReg_stdcall  @1053 @253 ; HR4000_SetGPIODataReg_stdcall
+    HR4000_SetGPIOIO               @280  @254 ; HR4000_SetGPIOIO
+    HR4000_SetGPIOIO_stdcall       @1048 @255 ; HR4000_SetGPIOIO_stdcall
+    HR4000_SetGPIOMux              @281  @256 ; HR4000_SetGPIOMux
+    HR4000_SetGPIOMuxAlt           @282  @257 ; HR4000_SetGPIOMuxAlt
+    HR4000_SetGPIOMuxAlt_stdcall   @1045 @258 ; HR4000_SetGPIOMuxAlt_stdcall
+    HR4000_SetGPIOMuxReg           @283  @259 ; HR4000_SetGPIOMuxReg
+    HR4000_SetGPIOMuxReg_stdcall   @1044 @260 ; HR4000_SetGPIOMuxReg_stdcall
+    HR4000_SetGPIOMux_stdcall      @1043 @261 ; HR4000_SetGPIOMux_stdcall
+    HR4000_SetGPIOPinData          @284  @262 ; HR4000_SetGPIOPinData
+    HR4000_SetGPIOPinData_stdcall  @1056 @263 ; HR4000_SetGPIOPinData_stdcall
+    HR4000_SetGPIOPinIO            @285  @264 ; HR4000_SetGPIOPinIO
+    HR4000_SetGPIOPinIO_stdcall    @1050 @265 ; HR4000_SetGPIOPinIO_stdcall
+    HR4000_SetGPIOPinInput         @286  @266 ; HR4000_SetGPIOPinInput
+    HR4000_SetGPIOPinInput_stdcall @1052 @267 ; HR4000_SetGPIOPinInput_stdcall
+    HR4000_SetGPIOPinOutput        @287  @268 ; HR4000_SetGPIOPinOutput
+    HR4000_SetGPIOPinOutput_stdcall @1051 @269 ; HR4000_SetGPIOPinOutput_stdcall
+    HR4000_SetHardwareTriggerDelay @288  @270 ; HR4000_SetHardwareTriggerDelay
+    HR4000_SetHardwareTriggerDelay_stdcall @1033 @271 ; HR4000_SetHardwareTriggerDelay_stdcall
+    HR4000_SetHardwareTriggerMode  @289  @272 ; HR4000_SetHardwareTriggerMode
+    HR4000_SetHardwareTriggerMode_stdcall @1035 @273 ; HR4000_SetHardwareTriggerMode_stdcall
+    HR4000_SetIntegrationClockTimer @290  @274 ; HR4000_SetIntegrationClockTimer
+    HR4000_SetIntegrationClockTimer_stdcall @1029 @275 ; HR4000_SetIntegrationClockTimer_stdcall
+    HR4000_SetIntegrationTimeBaseClock @291  @276 ; HR4000_SetIntegrationTimeBaseClock
+    HR4000_SetIntegrationTimeBaseClock_stdcall @1027 @277 ; HR4000_SetIntegrationTimeBaseClock_stdcall
+    HR4000_SetMasterClockDivisor   @292  @278 ; HR4000_SetMasterClockDivisor
+    HR4000_SetMasterClockDivisor_stdcall @1020 @279 ; HR4000_SetMasterClockDivisor_stdcall
+    HR4000_SetPowerDown            @293  @280 ; HR4000_SetPowerDown
+    HR4000_SetPowerDown_stdcall    @1007 @281 ; HR4000_SetPowerDown_stdcall
+    HR4000_SetShutterClock         @294  @282 ; HR4000_SetShutterClock
+    HR4000_SetShutterClock_stdcall @1031 @283 ; HR4000_SetShutterClock_stdcall
+    HR4000_SetSingleStrobeHigh     @295  @284 ; HR4000_SetSingleStrobeHigh
+    HR4000_SetSingleStrobeHigh_stdcall @1037 @285 ; HR4000_SetSingleStrobeHigh_stdcall
+    HR4000_SetSingleStrobeLow      @296  @286 ; HR4000_SetSingleStrobeLow
+    HR4000_SetSingleStrobeLow_stdcall @1039 @287 ; HR4000_SetSingleStrobeLow_stdcall
+    HR4000_SetStoredString         @297  @288 ; HR4000_SetStoredString
+    HR4000_SetStoredString_stdcall @1002 @289 ; HR4000_SetStoredString_stdcall
+    HR4000_SetStrobeEnableFPGA     @298  @290 ; HR4000_SetStrobeEnableFPGA
+    HR4000_SetStrobeEnableFPGA_stdcall @1041 @291 ; HR4000_SetStrobeEnableFPGA_stdcall
+    HR4000_WriteFPGA               @299  @292 ; HR4000_WriteFPGA
+    HR4000_WriteFPGA_stdcall       @1017 @293 ; HR4000_WriteFPGA_stdcall
+    HR4000_WriteI2C                @300  @294 ; HR4000_WriteI2C
+    HR4000_WriteI2C_stdcall        @1008 @295 ; HR4000_WriteI2C_stdcall
+    HR4000_WriteSPI                @301  @296 ; HR4000_WriteSPI
+    HR4000_WriteSPI_stdcall        @1010 @297 ; HR4000_WriteSPI_stdcall
+    NIRADC_EnableCooler            @302  @298 ; NIRADC_EnableCooler
+    NIRADC_EnableCooler_stdcall    @906  @299 ; NIRADC_EnableCooler_stdcall
+    NIRADC_EnableFan               @303  @300 ; NIRADC_EnableFan
+    NIRADC_EnableFan_stdcall       @908  @301 ; NIRADC_EnableFan_stdcall
+    NIRADC_EnableHighGain          @304  @302 ; NIRADC_EnableHighGain
+    NIRADC_EnableHighGain_stdcall  @907  @303 ; NIRADC_EnableHighGain_stdcall
+    NIRADC_GetBoardTemperature     @305  @304 ; NIRADC_GetBoardTemperature
+    NIRADC_GetBoardTemperature_stdcall @916  @305 ; NIRADC_GetBoardTemperature_stdcall
+    NIRADC_GetCoefficients         @306  @306 ; NIRADC_GetCoefficients
+    NIRADC_GetCoefficients_LVD     @307  @307 ; NIRADC_GetCoefficients_LVD
+    NIRADC_GetCoefficients_stdcall @900  @308 ; NIRADC_GetCoefficients_stdcall
+    NIRADC_GetFirmwareVersion      @308  @309 ; NIRADC_GetFirmwareVersion
+    NIRADC_GetFirmwareVersion_stdcall @910  @310 ; NIRADC_GetFirmwareVersion_stdcall
+    NIRADC_GetIntegrationTimeScalar @309  @311 ; NIRADC_GetIntegrationTimeScalar
+    NIRADC_GetIntegrationTimeScalar_stdcall @912  @312 ; NIRADC_GetIntegrationTimeScalar_stdcall
+    NIRADC_GetStatus               @310  @313 ; NIRADC_GetStatus
+    NIRADC_GetStatus_LVD           @311  @314 ; NIRADC_GetStatus_LVD
+    NIRADC_GetStatus_stdcall       @909  @315 ; NIRADC_GetStatus_stdcall
+    NIRADC_GetStoredString         @312  @316 ; NIRADC_GetStoredString
+    NIRADC_GetStoredString_stdcall @905  @317 ; NIRADC_GetStoredString_stdcall
+    NIRADC_GetTECSetPoint          @313  @318 ; NIRADC_GetTECSetPoint
+    NIRADC_GetTECSetPoint_stdcall  @914  @319 ; NIRADC_GetTECSetPoint_stdcall
+    NIRADC_GetTECTemperature       @314  @320 ; NIRADC_GetTECTemperature
+    NIRADC_GetTECTemperature_stdcall @915  @321 ; NIRADC_GetTECTemperature_stdcall
+    NIRADC_GetTemperatureStatus    @315  @322 ; NIRADC_GetTemperatureStatus
+    NIRADC_IdentifyNIR256          @316  @323 ; NIRADC_IdentifyNIR256
+    NIRADC_IdentifyNIR256_stdcall  @903  @324 ; NIRADC_IdentifyNIR256_stdcall
+    NIRADC_IdentifyNIR512          @317  @325 ; NIRADC_IdentifyNIR512
+    NIRADC_IdentifyNIR512_stdcall  @902  @326 ; NIRADC_IdentifyNIR512_stdcall
+    NIRADC_SetCoefficients         @318  @327 ; NIRADC_SetCoefficients
+    NIRADC_SetCoefficients_LVD     @319  @328 ; NIRADC_SetCoefficients_LVD
+    NIRADC_SetCoefficients_stdcall @901  @329 ; NIRADC_SetCoefficients_stdcall
+    NIRADC_SetIntegrationTimeScalar @320  @330 ; NIRADC_SetIntegrationTimeScalar
+    NIRADC_SetIntegrationTimeScalar_stdcall @911  @331 ; NIRADC_SetIntegrationTimeScalar_stdcall
+    NIRADC_SetStoredString         @321  @332 ; NIRADC_SetStoredString
+    NIRADC_SetStoredString_stdcall @904  @333 ; NIRADC_SetStoredString_stdcall
+    NIRADC_SetTECSetPoint          @322  @334 ; NIRADC_SetTECSetPoint
+    NIRADC_SetTECSetPoint_stdcall  @913  @335 ; NIRADC_SetTECSetPoint_stdcall
+    OOI_AcquisitionThreadActive    @323  @336 ; OOI_AcquisitionThreadActive
+    OOI_BufferEmpty                @324  @337 ; OOI_BufferEmpty
+    OOI_BufferEmpty_stdcall        @17   @338 ; OOI_BufferEmpty_stdcall
+    OOI_CFGEX_LVD                  @325  @339 ; OOI_CFGEX_LVD
+    OOI_CFG_LVD                    @326  @340 ; OOI_CFG_LVD
+    OOI_Config                     @327  @341 ; OOI_Config
+    OOI_ConfigEx                   @328  @342 ; OOI_ConfigEx
+    OOI_ConfigEx_stdcall           @28   @343 ; OOI_ConfigEx_stdcall
+    OOI_Config_stdcall             @19   @344 ; OOI_Config_stdcall
+    OOI_ContinuousScan             @329  @345 ; OOI_ContinuousScan
+    OOI_ContinuousScan_stdcall     @15   @346 ; OOI_ContinuousScan_stdcall
+    OOI_DMS_LVD                    @330  @347 ; OOI_DMS_LVD
+    OOI_DisableMultichannelSpectra @331  @348 ; OOI_DisableMultichannelSpectra
+    OOI_DisableMultichannelSpectra_stdcall @37   @349 ; OOI_DisableMultichannelSpectra_stdcall
+    OOI_DoScan                     @332  @350 ; OOI_DoScan
+    OOI_DoScan_Array               @333  @351 ; OOI_DoScan_Array
+    OOI_DoScan_Array_Long          @334  @352 ; OOI_DoScan_Array_Long
+    OOI_DoScan_Array_Long_stdcall  @21   @353 ; OOI_DoScan_Array_Long_stdcall
+    OOI_DoScan_Array_stdcall       @20   @354 ; OOI_DoScan_Array_stdcall
+    OOI_DoScan_stdcall             @18   @355 ; OOI_DoScan_stdcall
+    OOI_EMS_LVD                    @335  @356 ; OOI_EMS_LVD
+    OOI_ENLC_LVD                   @336  @357 ; OOI_ENLC_LVD
+    OOI_ESLC_LVD                   @337  @358 ; OOI_ESLC_LVD
+    OOI_EnableDriverMessages       @338  @359 ; OOI_EnableDriverMessages
+    OOI_EnableDriverMessages_stdcall @61   @360 ; OOI_EnableDriverMessages_stdcall
+    OOI_EnableMultichannelSpectra  @339  @361 ; OOI_EnableMultichannelSpectra
+    OOI_EnableMultichannelSpectra_stdcall @36   @362 ; OOI_EnableMultichannelSpectra_stdcall
+    OOI_EnableNLCorrection         @340  @363 ; OOI_EnableNLCorrection
+    OOI_EnableNLCorrection_stdcall @26   @364 ; OOI_EnableNLCorrection_stdcall
+    OOI_EnableSLCorrection         @341  @365 ; OOI_EnableSLCorrection
+    OOI_EnableSLCorrection_stdcall @27   @366 ; OOI_EnableSLCorrection_stdcall
+    OOI_FS_LVD                     @342  @367 ; OOI_FS_LVD
+    OOI_FS_LVD_32                  @343  @368 ; OOI_FS_LVD_32
+    OOI_Flexible_Acquisition       @344  @369 ; OOI_Flexible_Acquisition
+    OOI_Flexible_Acquisition_stdcall @22   @370 ; OOI_Flexible_Acquisition_stdcall
+    OOI_FullScan                   @345  @371 ; OOI_FullScan
+    OOI_FullScan_stdcall           @23   @372 ; OOI_FullScan_stdcall
+    OOI_GAT_LVD                    @346  @373 ; OOI_GAT_LVD
+    OOI_GBA_LVD                    @347  @374 ; OOI_GBA_LVD
+    OOI_GCUSBSN_LVD                @348  @375 ; OOI_GCUSBSN_LVD
+    OOI_GDV_LVD                    @349  @376 ; OOI_GDV_LVD
+    OOI_GIT_LVD                    @350  @377 ; OOI_GIT_LVD
+    OOI_GI_LVD                     @351  @378 ; OOI_GI_LVD
+    OOI_GNP_LVD                    @352  @379 ; OOI_GNP_LVD
+    OOI_GST_LVD                    @353  @380 ; OOI_GST_LVD
+    OOI_GetADCType                 @354  @381 ; OOI_GetADCType
+    OOI_GetADCType_stdcall         @30   @382 ; OOI_GetADCType_stdcall
+    OOI_GetAutonullingEnabled      @355  @383 ; OOI_GetAutonullingEnabled
+    OOI_GetAutonullingEnabled_stdcall @70   @384 ; OOI_GetAutonullingEnabled_stdcall
+    OOI_GetBaseAddress             @356  @385 ; OOI_GetBaseAddress
+    OOI_GetBaseAddress_stdcall     @31   @386 ; OOI_GetBaseAddress_stdcall
+    OOI_GetCurrentADC1000USBSerialNumber @357  @387 ; OOI_GetCurrentADC1000USBSerialNumber
+    OOI_GetCurrentUSB2000SerialNumber @358  @388 ; OOI_GetCurrentUSB2000SerialNumber
+    OOI_GetCurrentUSB2000SerialNumber_stdcall @49   @389 ; OOI_GetCurrentUSB2000SerialNumber_stdcall
+    OOI_GetCurrentUSBSerialNumber  @359  @390 ; OOI_GetCurrentUSBSerialNumber
+    OOI_GetCurrentUSBSerialNumber_stdcall @52   @391 ; OOI_GetCurrentUSBSerialNumber_stdcall
+    OOI_GetD3State                 @360  @392 ; OOI_GetD3State
+    OOI_GetD3State_stdcall         @56   @393 ; OOI_GetD3State_stdcall
+    OOI_GetDriverVersion           @361  @394 ; OOI_GetDriverVersion
+    OOI_GetDriverVersion_stdcall   @48   @395 ; OOI_GetDriverVersion_stdcall
+    OOI_GetExternalTemperatureCelsius @362  @396 ; OOI_GetExternalTemperatureCelsius
+    OOI_GetExternalTemperatureCelsius_stdcall @73   @397 ; OOI_GetExternalTemperatureCelsius_stdcall
+    OOI_GetIRQ                     @363  @398 ; OOI_GetIRQ
+    OOI_GetIRQ_stdcall             @32   @399 ; OOI_GetIRQ_stdcall
+    OOI_GetIntegrationTime         @364  @400 ; OOI_GetIntegrationTime
+    OOI_GetIntegrationTime_stdcall @35   @401 ; OOI_GetIntegrationTime_stdcall
+    OOI_GetLS450Modulation         @365  @402 ; OOI_GetLS450Modulation
+    OOI_GetLS450Modulation_stdcall @77   @403 ; OOI_GetLS450Modulation_stdcall
+    OOI_GetMaximumScopeModeIntensity @366  @404 ; OOI_GetMaximumScopeModeIntensity
+    OOI_GetMaximumScopeModeIntensity_stdcall @68   @405 ; OOI_GetMaximumScopeModeIntensity_stdcall
+    OOI_GetNIDAQCardID             @367  @406 ; OOI_GetNIDAQCardID
+    OOI_GetNIDAQCardID_stdcall     @34   @407 ; OOI_GetNIDAQCardID_stdcall
+    OOI_GetNumberOfPixels          @368  @408 ; OOI_GetNumberOfPixels
+    OOI_GetNumberOfPixels_stdcall  @38   @409 ; OOI_GetNumberOfPixels_stdcall
+    OOI_GetO2ProbeCalibrationCoefficients @369  @410 ; OOI_GetO2ProbeCalibrationCoefficients
+    OOI_GetO2ProbeCalibrationCoefficients_stdcall @76   @411 ; OOI_GetO2ProbeCalibrationCoefficients_stdcall
+    OOI_GetPCICardID               @370  @412 ; OOI_GetPCICardID
+    OOI_GetPCICardID_stdcall       @57   @413 ; OOI_GetPCICardID_stdcall
+    OOI_GetPointerToArray_stdcall  @46   @414 ; OOI_GetPointerToArray_stdcall
+    OOI_GetSAD500BaudRate          @371  @415 ; OOI_GetSAD500BaudRate
+    OOI_GetSAD500BaudRate_stdcall  @43   @416 ; OOI_GetSAD500BaudRate_stdcall
+    OOI_GetSAD500CompressedMode    @372  @417 ; OOI_GetSAD500CompressedMode
+    OOI_GetSAD500CompressedMode_stdcall @45   @418 ; OOI_GetSAD500CompressedMode_stdcall
+    OOI_GetSAD500PixelResolution   @373  @419 ; OOI_GetSAD500PixelResolution
+    OOI_GetSAD500PixelResolution_stdcall @44   @420 ; OOI_GetSAD500PixelResolution_stdcall
+    OOI_GetScanTimes               @374  @421 ; OOI_GetScanTimes
+    OOI_GetScanTimes_stdcall       @67   @422 ; OOI_GetScanTimes_stdcall
+    OOI_GetSerialPort              @375  @423 ; OOI_GetSerialPort
+    OOI_GetSerialPort_stdcall      @33   @424 ; OOI_GetSerialPort_stdcall
+    OOI_GetSpectraForLV            @376  @425 ; OOI_GetSpectraForLV
+    OOI_GetSpectrometerType        @377  @426 ; OOI_GetSpectrometerType
+    OOI_GetSpectrometerType_stdcall @29   @427 ; OOI_GetSpectrometerType_stdcall
+    OOI_GetTemperatureCoefficients @378  @428 ; OOI_GetTemperatureCoefficients
+    OOI_GetTemperatureCoefficients_stdcall @74   @429 ; OOI_GetTemperatureCoefficients_stdcall
+    OOI_GetTrigTimeout             @379  @430 ; OOI_GetTrigTimeout
+    OOI_GetTrigTimeout_stdcall     @59   @431 ; OOI_GetTrigTimeout_stdcall
+    OOI_IdentifyAllADC1000USB      @380  @432 ; OOI_IdentifyAllADC1000USB
+    OOI_IdentifyAllADC1000USB_stdcall @54   @433 ; OOI_IdentifyAllADC1000USB_stdcall
+    OOI_IdentifyAllHR2000          @381  @434 ; OOI_IdentifyAllHR2000
+    OOI_IdentifyAllHR2000Plus      @382  @435 ; OOI_IdentifyAllHR2000Plus
+    OOI_IdentifyAllHR2000Plus_stdcall @65   @436 ; OOI_IdentifyAllHR2000Plus_stdcall
+    OOI_IdentifyAllHR2000_stdcall  @58   @437 ; OOI_IdentifyAllHR2000_stdcall
+    OOI_IdentifyAllHR4000          @383  @438 ; OOI_IdentifyAllHR4000
+    OOI_IdentifyAllHR4000_stdcall  @64   @439 ; OOI_IdentifyAllHR4000_stdcall
+    OOI_IdentifyAllNIR256          @384  @440 ; OOI_IdentifyAllNIR256
+    OOI_IdentifyAllNIR256_stdcall  @63   @441 ; OOI_IdentifyAllNIR256_stdcall
+    OOI_IdentifyAllNIR512          @385  @442 ; OOI_IdentifyAllNIR512
+    OOI_IdentifyAllNIR512_stdcall  @62   @443 ; OOI_IdentifyAllNIR512_stdcall
+    OOI_IdentifyAllQE65000         @386  @444 ; OOI_IdentifyAllQE65000
+    OOI_IdentifyAllQE65000_stdcall @66   @445 ; OOI_IdentifyAllQE65000_stdcall
+    OOI_IdentifyAllUSB2000         @387  @446 ; OOI_IdentifyAllUSB2000
+    OOI_IdentifyAllUSB2000Plus     @388  @447 ; OOI_IdentifyAllUSB2000Plus
+    OOI_IdentifyAllUSB2000Plus_stdcall @71   @448 ; OOI_IdentifyAllUSB2000Plus_stdcall
+    OOI_IdentifyAllUSB2000_stdcall @51   @449 ; OOI_IdentifyAllUSB2000_stdcall
+    OOI_IdentifyAllUSB4000         @389  @450 ; OOI_IdentifyAllUSB4000
+    OOI_IdentifyAllUSB4000_stdcall @72   @451 ; OOI_IdentifyAllUSB4000_stdcall
+    OOI_InitDriverForLV            @390  @452 ; OOI_InitDriverForLV
+    OOI_ParamSet                   @391  @453 ; OOI_ParamSet
+    OOI_ParamSet_stdcall           @12   @454 ; OOI_ParamSet_stdcall
+    OOI_Register                   @392  @455 ; OOI_Register
+    OOI_Register_stdcall           @10   @456 ; OOI_Register_stdcall
+    OOI_S2000StrobeEnable          @393  @457 ; OOI_S2000StrobeEnable
+    OOI_S2000StrobeEnable_stdcall  @39   @458 ; OOI_S2000StrobeEnable_stdcall
+    OOI_SAD_GBR_LVD                @394  @459 ; OOI_SAD_GBR_LVD
+    OOI_SAD_GCM_LVD                @395  @460 ; OOI_SAD_GCM_LVD
+    OOI_SAD_GPR_LVD                @396  @461 ; OOI_SAD_GPR_LVD
+    OOI_SAD_SBR_LVD                @397  @462 ; OOI_SAD_SBR_LVD
+    OOI_SAD_SCM_LVD                @398  @463 ; OOI_SAD_SCM_LVD
+    OOI_SAD_SPR_LVD                @399  @464 ; OOI_SAD_SPR_LVD
+    OOI_SCUSBSN_LVD                @425  @465 ; OOI_SCUSBSN_LVD
+    OOI_SE_LVD                     @426  @466 ; OOI_SE_LVD
+    OOI_SNLC_LVD                   @427  @467 ; OOI_SNLC_LVD
+    OOI_SSLC_LVD                   @428  @468 ; OOI_SSLC_LVD
+    OOI_SetAutonullingEnabled      @429  @469 ; OOI_SetAutonullingEnabled
+    OOI_SetAutonullingEnabled_stdcall @69   @470 ; OOI_SetAutonullingEnabled_stdcall
+    OOI_SetCurrentADC1000USBSerialNumber @430  @471 ; OOI_SetCurrentADC1000USBSerialNumber
+    OOI_SetCurrentUSB2000SerialNumber @431  @472 ; OOI_SetCurrentUSB2000SerialNumber
+    OOI_SetCurrentUSB2000SerialNumber_stdcall @50   @473 ; OOI_SetCurrentUSB2000SerialNumber_stdcall
+    OOI_SetCurrentUSBSerialNumber  @432  @474 ; OOI_SetCurrentUSBSerialNumber
+    OOI_SetCurrentUSBSerialNumber_stdcall @53   @475 ; OOI_SetCurrentUSBSerialNumber_stdcall
+    OOI_SetLS450Da                 @433  @476 ; OOI_SetLS450Da
+    OOI_SetLS450Da_stdcall         @79   @477 ; OOI_SetLS450Da_stdcall
+    OOI_SetLS450Modulation         @434  @478 ; OOI_SetLS450Modulation
+    OOI_SetLS450Modulation_stdcall @78   @479 ; OOI_SetLS450Modulation_stdcall
+    OOI_SetLastUSBScanValid        @435  @480 ; OOI_SetLastUSBScanValid
+    OOI_SetNLCoefs                 @436  @481 ; OOI_SetNLCoefs
+    OOI_SetNLCoefs_stdcall         @24   @482 ; OOI_SetNLCoefs_stdcall
+    OOI_SetO2ProbeCalibrationCoefficients @437  @483 ; OOI_SetO2ProbeCalibrationCoefficients
+    OOI_SetO2ProbeCalibrationCoefficients_stdcall @80   @484 ; OOI_SetO2ProbeCalibrationCoefficients_stdcall
+    OOI_SetSAD500BaudRate          @438  @485 ; OOI_SetSAD500BaudRate
+    OOI_SetSAD500BaudRate_stdcall  @40   @486 ; OOI_SetSAD500BaudRate_stdcall
+    OOI_SetSAD500CompressedMode    @439  @487 ; OOI_SetSAD500CompressedMode
+    OOI_SetSAD500CompressedMode_stdcall @42   @488 ; OOI_SetSAD500CompressedMode_stdcall
+    OOI_SetSAD500PixelResolution   @440  @489 ; OOI_SetSAD500PixelResolution
+    OOI_SetSAD500PixelResolution_stdcall @41   @490 ; OOI_SetSAD500PixelResolution_stdcall
+    OOI_SetSLCoef                  @441  @491 ; OOI_SetSLCoef
+    OOI_SetSLCoef_stdcall          @25   @492 ; OOI_SetSLCoef_stdcall
+    OOI_SetTemperatureCoefficients @442  @493 ; OOI_SetTemperatureCoefficients
+    OOI_SetTemperatureCoefficients_stdcall @75   @494 ; OOI_SetTemperatureCoefficients_stdcall
+    OOI_SetTrigTimeout             @443  @495 ; OOI_SetTrigTimeout
+    OOI_SetTrigTimeout_stdcall     @60   @496 ; OOI_SetTrigTimeout_stdcall
+    OOI_SingleScan                 @444  @497 ; OOI_SingleScan
+    OOI_SingleScanForLV            @445  @498 ; OOI_SingleScanForLV
+    OOI_SingleScan_Thread          @446  @499 ; OOI_SingleScan_Thread
+    OOI_SingleScan_Thread_stdcall  @55   @500 ; OOI_SingleScan_Thread_stdcall
+    OOI_SingleScan_stdcall         @14   @501 ; OOI_SingleScan_stdcall
+    OOI_Stat                       @447  @502 ; OOI_Stat
+    OOI_Stat_stdcall               @13   @503 ; OOI_Stat_stdcall
+    OOI_Stop                       @448  @504 ; OOI_Stop
+    OOI_Stop_stdcall               @16   @505 ; OOI_Stop_stdcall
+    OOI_StrobeEnable               @449  @506 ; OOI_StrobeEnable
+    OOI_StrobeEnable_stdcall       @47   @507 ; OOI_StrobeEnable_stdcall
+    OOI_USB_ResetAllPipes          @450  @508 ; OOI_USB_ResetAllPipes
+    OOI_UnRegister                 @451  @509 ; OOI_UnRegister
+    OOI_UnRegister_stdcall         @11   @510 ; OOI_UnRegister_stdcall
+    QE65000_GetBoardTemperature    @452  @511 ; QE65000_GetBoardTemperature
+    QE65000_GetBoardTemperature_stdcall @1206 @512 ; QE65000_GetBoardTemperature_stdcall
+    QE65000_GetCoefficients        @453  @513 ; QE65000_GetCoefficients
+    QE65000_GetCoefficients_LVD    @454  @514 ; QE65000_GetCoefficients_LVD
+    QE65000_GetCoefficients_stdcall @1200 @515 ; QE65000_GetCoefficients_stdcall
+    QE65000_GetContinuousStrobeBase @455  @516 ; QE65000_GetContinuousStrobeBase
+    QE65000_GetContinuousStrobeBaseTime @456  @517 ; QE65000_GetContinuousStrobeBaseTime
+    QE65000_GetContinuousStrobeBaseTime_stdcall @1253 @518 ; QE65000_GetContinuousStrobeBaseTime_stdcall
+    QE65000_GetContinuousStrobeBase_stdcall @1221 @519 ; QE65000_GetContinuousStrobeBase_stdcall
+    QE65000_GetContinuousStrobeClock @457  @520 ; QE65000_GetContinuousStrobeClock
+    QE65000_GetContinuousStrobeClock_stdcall @1223 @521 ; QE65000_GetContinuousStrobeClock_stdcall
+    QE65000_GetContinuousStrobeTime @458  @522 ; QE65000_GetContinuousStrobeTime
+    QE65000_GetContinuousStrobeTime_stdcall @1254 @523 ; QE65000_GetContinuousStrobeTime_stdcall
+    QE65000_GetDetectorBoardTemperature @459  @524 ; QE65000_GetDetectorBoardTemperature
+    QE65000_GetDetectorBoardTemperature_stdcall @1258 @525 ; QE65000_GetDetectorBoardTemperature_stdcall
+    QE65000_GetFPGAFirmwareVersion @460  @526 ; QE65000_GetFPGAFirmwareVersion
+    QE65000_GetFPGAFirmwareVersion_stdcall @1220 @527 ; QE65000_GetFPGAFirmwareVersion_stdcall
+    QE65000_GetFirmwareVersion     @461  @528 ; QE65000_GetFirmwareVersion
+    QE65000_GetFirmwareVersion_stdcall @1203 @529 ; QE65000_GetFirmwareVersion_stdcall
+    QE65000_GetGPIODataReg         @462  @530 ; QE65000_GetGPIODataReg
+    QE65000_GetGPIODataReg_stdcall @1248 @531 ; QE65000_GetGPIODataReg_stdcall
+    QE65000_GetGPIOIO              @463  @532 ; QE65000_GetGPIOIO
+    QE65000_GetGPIOIO_stdcall      @1242 @533 ; QE65000_GetGPIOIO_stdcall
+    QE65000_GetGPIOMux             @464  @534 ; QE65000_GetGPIOMux
+    QE65000_GetGPIOMux_stdcall     @1237 @535 ; QE65000_GetGPIOMux_stdcall
+    QE65000_GetGPIOPinData         @465  @536 ; QE65000_GetGPIOPinData
+    QE65000_GetGPIOPinData_stdcall @1249 @537 ; QE65000_GetGPIOPinData_stdcall
+    QE65000_GetGPIOPinIO           @466  @538 ; QE65000_GetGPIOPinIO
+    QE65000_GetGPIOPinIO_stdcall   @1243 @539 ; QE65000_GetGPIOPinIO_stdcall
+    QE65000_GetGPIOPinMux          @467  @540 ; QE65000_GetGPIOPinMux
+    QE65000_GetGPIOPinMux_stdcall  @1241 @541 ; QE65000_GetGPIOPinMux_stdcall
+    QE65000_GetIntegrationClockTime @468  @542 ; QE65000_GetIntegrationClockTime
+    QE65000_GetIntegrationClockTime_stdcall @1252 @543 ; QE65000_GetIntegrationClockTime_stdcall
+    QE65000_GetIntegrationClockTimer @469  @544 ; QE65000_GetIntegrationClockTimer
+    QE65000_GetIntegrationClockTimer_stdcall @1227 @545 ; QE65000_GetIntegrationClockTimer_stdcall
+    QE65000_GetIntegrationTimeBaseClock @470  @546 ; QE65000_GetIntegrationTimeBaseClock
+    QE65000_GetIntegrationTimeBaseClock_stdcall @1225 @547 ; QE65000_GetIntegrationTimeBaseClock_stdcall
+    QE65000_GetMainBoardTemperature @471  @548 ; QE65000_GetMainBoardTemperature
+    QE65000_GetMainBoardTemperature_stdcall @1257 @549 ; QE65000_GetMainBoardTemperature_stdcall
+    QE65000_GetMasterClockDivisor  @472  @550 ; QE65000_GetMasterClockDivisor
+    QE65000_GetMasterClockDivisor_stdcall @1218 @551 ; QE65000_GetMasterClockDivisor_stdcall
+    QE65000_GetMasterClockTime     @473  @552 ; QE65000_GetMasterClockTime
+    QE65000_GetMasterClockTime_stdcall @1251 @553 ; QE65000_GetMasterClockTime_stdcall
+    QE65000_GetPSOCVersion         @474  @554 ; QE65000_GetPSOCVersion
+    QE65000_GetPSOCVersion_stdcall @1216 @555 ; QE65000_GetPSOCVersion_stdcall
+    QE65000_GetShutterClock        @475  @556 ; QE65000_GetShutterClock
+    QE65000_GetShutterClock_stdcall @1229 @557 ; QE65000_GetShutterClock_stdcall
+    QE65000_GetSingleStrobeHigh    @476  @558 ; QE65000_GetSingleStrobeHigh
+    QE65000_GetSingleStrobeHighTime @477  @559 ; QE65000_GetSingleStrobeHighTime
+    QE65000_GetSingleStrobeHighTime_stdcall @1255 @560 ; QE65000_GetSingleStrobeHighTime_stdcall
+    QE65000_GetSingleStrobeHigh_stdcall @1231 @561 ; QE65000_GetSingleStrobeHigh_stdcall
+    QE65000_GetSingleStrobeLow     @478  @562 ; QE65000_GetSingleStrobeLow
+    QE65000_GetSingleStrobeLowTime @479  @563 ; QE65000_GetSingleStrobeLowTime
+    QE65000_GetSingleStrobeLowTime_stdcall @1256 @564 ; QE65000_GetSingleStrobeLowTime_stdcall
+    QE65000_GetSingleStrobeLow_stdcall @1233 @565 ; QE65000_GetSingleStrobeLow_stdcall
+    QE65000_GetStoredString        @480  @566 ; QE65000_GetStoredString
+    QE65000_GetStoredString_stdcall @1205 @567 ; QE65000_GetStoredString_stdcall
+    QE65000_GetStrobeEnableFPGA    @481  @568 ; QE65000_GetStrobeEnableFPGA
+    QE65000_GetStrobeEnableFPGA_stdcall @1235 @569 ; QE65000_GetStrobeEnableFPGA_stdcall
+    QE65000_GetTECTemperature      @482  @570 ; QE65000_GetTECTemperature
+    QE65000_GetTECTemperature_stdcall @1262 @571 ; QE65000_GetTECTemperature_stdcall
+    QE65000_IdentifyQE65000        @483  @572 ; QE65000_IdentifyQE65000
+    QE65000_IdentifyQE65000_stdcall @1202 @573 ; QE65000_IdentifyQE65000_stdcall
+    QE65000_ReadAnalogInput        @484  @574 ; QE65000_ReadAnalogInput
+    QE65000_ReadAnalogInputVoltage @485  @575 ; QE65000_ReadAnalogInputVoltage
+    QE65000_ReadAnalogInputVoltage_stdcall @1213 @576 ; QE65000_ReadAnalogInputVoltage_stdcall
+    QE65000_ReadAnalogInput_stdcall @1212 @577 ; QE65000_ReadAnalogInput_stdcall
+    QE65000_ReadFPGA               @486  @578 ; QE65000_ReadFPGA
+    QE65000_ReadFPGA_stdcall       @1217 @579 ; QE65000_ReadFPGA_stdcall
+    QE65000_ReadI2C                @487  @580 ; QE65000_ReadI2C
+    QE65000_ReadI2C_stdcall        @1209 @581 ; QE65000_ReadI2C_stdcall
+    QE65000_ReadSPI                @488  @582 ; QE65000_ReadSPI
+    QE65000_ReadSPI_stdcall        @1211 @583 ; QE65000_ReadSPI_stdcall
+    QE65000_SetAnalogOutput        @489  @584 ; QE65000_SetAnalogOutput
+    QE65000_SetAnalogOutputVoltage @490  @585 ; QE65000_SetAnalogOutputVoltage
+    QE65000_SetAnalogOutputVoltage_stdcall @1215 @586 ; QE65000_SetAnalogOutputVoltage_stdcall
+    QE65000_SetAnalogOutput_stdcall @1214 @587 ; QE65000_SetAnalogOutput_stdcall
+    QE65000_SetCoefficients        @491  @588 ; QE65000_SetCoefficients
+    QE65000_SetCoefficients_LVD    @492  @589 ; QE65000_SetCoefficients_LVD
+    QE65000_SetCoefficients_stdcall @1201 @590 ; QE65000_SetCoefficients_stdcall
+    QE65000_SetContinuousStrobeBase @493  @591 ; QE65000_SetContinuousStrobeBase
+    QE65000_SetContinuousStrobeBase_stdcall @1222 @592 ; QE65000_SetContinuousStrobeBase_stdcall
+    QE65000_SetContinuousStrobeClock @494  @593 ; QE65000_SetContinuousStrobeClock
+    QE65000_SetContinuousStrobeClock_stdcall @1224 @594 ; QE65000_SetContinuousStrobeClock_stdcall
+    QE65000_SetFanEnable           @495  @595 ; QE65000_SetFanEnable
+    QE65000_SetFanEnable_stdcall   @1259 @596 ; QE65000_SetFanEnable_stdcall
+    QE65000_SetGPIODataReg         @496  @597 ; QE65000_SetGPIODataReg
+    QE65000_SetGPIODataReg_stdcall @1247 @598 ; QE65000_SetGPIODataReg_stdcall
+    QE65000_SetGPIOMux             @497  @599 ; QE65000_SetGPIOMux
+    QE65000_SetGPIOMuxAlt          @498  @600 ; QE65000_SetGPIOMuxAlt
+    QE65000_SetGPIOMuxAlt_stdcall  @1240 @601 ; QE65000_SetGPIOMuxAlt_stdcall
+    QE65000_SetGPIOMuxReg          @499  @602 ; QE65000_SetGPIOMuxReg
+    QE65000_SetGPIOMuxReg_stdcall  @1239 @603 ; QE65000_SetGPIOMuxReg_stdcall
+    QE65000_SetGPIOMux_stdcall     @1238 @604 ; QE65000_SetGPIOMux_stdcall
+    QE65000_SetGPIOPinData         @507  @605 ; QE65000_SetGPIOPinData
+    QE65000_SetGPIOPinData_stdcall @1250 @606 ; QE65000_SetGPIOPinData_stdcall
+    QE65000_SetGPIOPinIO           @508  @607 ; QE65000_SetGPIOPinIO
+    QE65000_SetGPIOPinIO_stdcall   @1244 @608 ; QE65000_SetGPIOPinIO_stdcall
+    QE65000_SetGPIOPinInput        @509  @609 ; QE65000_SetGPIOPinInput
+    QE65000_SetGPIOPinInput_stdcall @1246 @610 ; QE65000_SetGPIOPinInput_stdcall
+    QE65000_SetGPIOPinOutput       @510  @611 ; QE65000_SetGPIOPinOutput
+    QE65000_SetGPIOPinOutput_stdcall @1245 @612 ; QE65000_SetGPIOPinOutput_stdcall
+    QE65000_SetIntegrationClockTimer @511  @613 ; QE65000_SetIntegrationClockTimer
+    QE65000_SetIntegrationClockTimer_stdcall @1228 @614 ; QE65000_SetIntegrationClockTimer_stdcall
+    QE65000_SetIntegrationTimeBaseClock @512  @615 ; QE65000_SetIntegrationTimeBaseClock
+    QE65000_SetIntegrationTimeBaseClock_stdcall @1226 @616 ; QE65000_SetIntegrationTimeBaseClock_stdcall
+    QE65000_SetMasterClockDivisor  @513  @617 ; QE65000_SetMasterClockDivisor
+    QE65000_SetMasterClockDivisor_stdcall @1219 @618 ; QE65000_SetMasterClockDivisor_stdcall
+    QE65000_SetPowerDown           @514  @619 ; QE65000_SetPowerDown
+    QE65000_SetPowerDown_stdcall   @1207 @620 ; QE65000_SetPowerDown_stdcall
+    QE65000_SetShutterClock        @515  @621 ; QE65000_SetShutterClock
+    QE65000_SetShutterClock_stdcall @1230 @622 ; QE65000_SetShutterClock_stdcall
+    QE65000_SetSingleStrobeHigh    @516  @623 ; QE65000_SetSingleStrobeHigh
+    QE65000_SetSingleStrobeHigh_stdcall @1232 @624 ; QE65000_SetSingleStrobeHigh_stdcall
+    QE65000_SetSingleStrobeLow     @517  @625 ; QE65000_SetSingleStrobeLow
+    QE65000_SetSingleStrobeLow_stdcall @1234 @626 ; QE65000_SetSingleStrobeLow_stdcall
+    QE65000_SetStoredString        @518  @627 ; QE65000_SetStoredString
+    QE65000_SetStoredString_stdcall @1204 @628 ; QE65000_SetStoredString_stdcall
+    QE65000_SetStrobeEnableFPGA    @519  @629 ; QE65000_SetStrobeEnableFPGA
+    QE65000_SetStrobeEnableFPGA_stdcall @1236 @630 ; QE65000_SetStrobeEnableFPGA_stdcall
+    QE65000_SetTECEnable           @520  @631 ; QE65000_SetTECEnable
+    QE65000_SetTECEnable_stdcall   @1260 @632 ; QE65000_SetTECEnable_stdcall
+    QE65000_SetTECSetPoint         @521  @633 ; QE65000_SetTECSetPoint
+    QE65000_SetTECSetPoint_stdcall @1261 @634 ; QE65000_SetTECSetPoint_stdcall
+    QE65000_WriteFPGA              @522  @635 ; QE65000_WriteFPGA
+    QE65000_WriteI2C               @524  @636 ; QE65000_WriteI2C
+    QE65000_WriteI2C_stdcall       @1208 @637 ; QE65000_WriteI2C_stdcall
+    QE65000_WriteSPI               @525  @638 ; QE65000_WriteSPI
+    QE65000_WriteSPI_stdcall       @1210 @639 ; QE65000_WriteSPI_stdcall
+    SAD_CL_LVD                     @526  @640 ; SAD_CL_LVD
+    SAD_CM_LVD                     @527  @641 ; SAD_CM_LVD
+    SAD_ChangeSlowReadPointer      @528  @642 ; SAD_ChangeSlowReadPointer
+    SAD_ChangeSlowReadPointer_stdcall @144  @643 ; SAD_ChangeSlowReadPointer_stdcall
+    SAD_ClearMemory                @529  @644 ; SAD_ClearMemory
+    SAD_ClearMemory_stdcall        @109  @645 ; SAD_ClearMemory_stdcall
+    SAD_ClearSlowMemory            @530  @646 ; SAD_ClearSlowMemory
+    SAD_ClearSlowMemory_stdcall    @145  @647 ; SAD_ClearSlowMemory_stdcall
+    SAD_Close                      @531  @648 ; SAD_Close
+    SAD_Close_stdcall              @102  @649 ; SAD_Close_stdcall
+    SAD_DFM_LVD                    @532  @650 ; SAD_DFM_LVD
+    SAD_DetermineSerialADCType     @533  @651 ; SAD_DetermineSerialADCType
+    SAD_DetermineSerialADCType_stdcall @165  @652 ; SAD_DetermineSerialADCType_stdcall
+    SAD_DumpFastMemory             @534  @653 ; SAD_DumpFastMemory
+    SAD_DumpFastMemory_stdcall     @108  @654 ; SAD_DumpFastMemory_stdcall
+    SAD_EDSM_LVD                   @535  @655 ; SAD_EDSM_LVD
+    SAD_EnableISR                  @536  @656 ; SAD_EnableISR
+    SAD_EnableISR_stdcall          @114  @657 ; SAD_EnableISR_stdcall
+    SAD_EnterDoubleSecretMode      @537  @658 ; SAD_EnterDoubleSecretMode
+    SAD_EnterDoubleSecretMode_stdcall @143  @659 ; SAD_EnterDoubleSecretMode_stdcall
+    SAD_GADR_LVD                   @538  @660 ; SAD_GADR_LVD
+    SAD_GBR_LVD                    @539  @661 ; SAD_GBR_LVD
+    SAD_GBW_LVD                    @540  @662 ; SAD_GBW_LVD
+    SAD_GCDS_LVD                   @541  @663 ; SAD_GCDS_LVD
+    SAD_GCM_LVD                    @542  @664 ; SAD_GCM_LVD
+    SAD_GCSM_LVD                   @543  @665 ; SAD_GCSM_LVD
+    SAD_GET_LVD                    @544  @666 ; SAD_GET_LVD
+    SAD_GE_LVD                     @545  @667 ; SAD_GE_LVD
+    SAD_GFMA_LVD                   @546  @668 ; SAD_GFMA_LVD
+    SAD_GFPM_LVD                   @547  @669 ; SAD_GFPM_LVD
+    SAD_GIC_LVD                    @548  @670 ; SAD_GIC_LVD
+    SAD_GIMP_LVD                   @549  @671 ; SAD_GIMP_LVD
+    SAD_GIT_LVD                    @550  @672 ; SAD_GIT_LVD
+    SAD_GNSIM_LVD                  @551  @673 ; SAD_GNSIM_LVD
+    SAD_GNSTS_LVD                  @552  @674 ; SAD_GNSTS_LVD
+    SAD_GPM_LVD                    @553  @675 ; SAD_GPM_LVD
+    SAD_GSC_LVD                    @554  @676 ; SAD_GSC_LVD
+    SAD_GSE_LVD                    @555  @677 ; SAD_GSE_LVD
+    SAD_GSF_LVD                    @556  @678 ; SAD_GSF_LVD
+    SAD_GSI_LVD                    @557  @679 ; SAD_GSI_LVD
+    SAD_GSMA_LVD                   @558  @680 ; SAD_GSMA_LVD
+    SAD_GSM_LVD                    @559  @681 ; SAD_GSM_LVD
+    SAD_GSS_LVD                    @560  @682 ; SAD_GSS_LVD
+    SAD_GSTA_LVD                   @561  @683 ; SAD_GSTA_LVD
+    SAD_GV_LVD                     @562  @684 ; SAD_GV_LVD
+    SAD_GetADCRate                 @563  @685 ; SAD_GetADCRate
+    SAD_GetADCRate_stdcall         @132  @686 ; SAD_GetADCRate_stdcall
+    SAD_GetBaudRate                @564  @687 ; SAD_GetBaudRate
+    SAD_GetBaudRate_stdcall        @136  @688 ; SAD_GetBaudRate_stdcall
+    SAD_GetBoxcarWidth             @565  @689 ; SAD_GetBoxcarWidth
+    SAD_GetBoxcarWidth_stdcall     @131  @690 ; SAD_GetBoxcarWidth_stdcall
+    SAD_GetChecksumMode            @566  @691 ; SAD_GetChecksumMode
+    SAD_GetChecksumMode_stdcall    @158  @692 ; SAD_GetChecksumMode_stdcall
+    SAD_GetCompressedMode          @567  @693 ; SAD_GetCompressedMode
+    SAD_GetCompressedMode_stdcall  @153  @694 ; SAD_GetCompressedMode_stdcall
+    SAD_GetDebugMode               @568  @695 ; SAD_GetDebugMode
+    SAD_GetDebugMode_stdcall       @150  @696 ; SAD_GetDebugMode_stdcall
+    SAD_GetError                   @569  @697 ; SAD_GetError
+    SAD_GetError_stdcall           @127  @698 ; SAD_GetError_stdcall
+    SAD_GetExternalTrigger         @570  @699 ; SAD_GetExternalTrigger
+    SAD_GetExternalTrigger_stdcall @140  @700 ; SAD_GetExternalTrigger_stdcall
+    SAD_GetFastMemoryAvailable     @571  @701 ; SAD_GetFastMemoryAvailable
+    SAD_GetFastMemoryAvailable_stdcall @112  @702 ; SAD_GetFastMemoryAvailable_stdcall
+    SAD_GetFullPixelMode           @572  @703 ; SAD_GetFullPixelMode
+    SAD_GetFullPixelMode_stdcall   @142  @704 ; SAD_GetFullPixelMode_stdcall
+    SAD_GetIntegrationCounter      @573  @705 ; SAD_GetIntegrationCounter
+    SAD_GetIntegrationCounter_stdcall @128  @706 ; SAD_GetIntegrationCounter_stdcall
+    SAD_GetIntegrationTime         @574  @707 ; SAD_GetIntegrationTime
+    SAD_GetIntegrationTime_stdcall @134  @708 ; SAD_GetIntegrationTime_stdcall
+    SAD_GetInterpolateMissingPixels @575  @709 ; SAD_GetInterpolateMissingPixels
+    SAD_GetInterpolateMissingPixels_stdcall @141  @710 ; SAD_GetInterpolateMissingPixels_stdcall
+    SAD_GetNumberOfBadMemoryBlocks @576  @711 ; SAD_GetNumberOfBadMemoryBlocks
+    SAD_GetNumberOfBadMemoryBlocks_stdcall @149  @712 ; SAD_GetNumberOfBadMemoryBlocks_stdcall
+    SAD_GetNumberOfScansInMemory   @577  @713 ; SAD_GetNumberOfScansInMemory
+    SAD_GetNumberOfScansInMemory_stdcall @111  @714 ; SAD_GetNumberOfScansInMemory_stdcall
+    SAD_GetNumberOfScansToStore    @578  @715 ; SAD_GetNumberOfScansToStore
+    SAD_GetNumberOfScansToStore_stdcall @138  @716 ; SAD_GetNumberOfScansToStore_stdcall
+    SAD_GetPixelMode               @579  @717 ; SAD_GetPixelMode
+    SAD_GetPixelMode_stdcall       @139  @718 ; SAD_GetPixelMode_stdcall
+    SAD_GetPrintDebugMode          @580  @719 ; SAD_GetPrintDebugMode
+    SAD_GetPrintDebugMode_stdcall  @151  @720 ; SAD_GetPrintDebugMode_stdcall
+    SAD_GetRamanMode               @581  @721 ; SAD_GetRamanMode
+    SAD_GetRamanMode_stdcall       @168  @722 ; SAD_GetRamanMode_stdcall
+    SAD_GetS1024DWCDSMode          @582  @723 ; SAD_GetS1024DWCDSMode
+    SAD_GetS1024DWCDSMode_stdcall  @156  @724 ; SAD_GetS1024DWCDSMode_stdcall
+    SAD_GetScanMode                @583  @725 ; SAD_GetScanMode
+    SAD_GetScanMode_stdcall        @137  @726 ; SAD_GetScanMode_stdcall
+    SAD_GetScansToAdd              @584  @727 ; SAD_GetScansToAdd
+    SAD_GetScansToAdd_stdcall      @130  @728 ; SAD_GetScansToAdd_stdcall
+    SAD_GetSlowMemoryAvailable     @585  @729 ; SAD_GetSlowMemoryAvailable
+    SAD_GetSlowMemoryAvailable_stdcall @110  @730 ; SAD_GetSlowMemoryAvailable_stdcall
+    SAD_GetSpectrometerChannel     @586  @731 ; SAD_GetSpectrometerChannel
+    SAD_GetSpectrometerChannel_stdcall @133  @732 ; SAD_GetSpectrometerChannel_stdcall
+    SAD_GetStoredFloat             @587  @733 ; SAD_GetStoredFloat
+    SAD_GetStoredFloat_stdcall     @162  @734 ; SAD_GetStoredFloat_stdcall
+    SAD_GetStoredInt               @588  @735 ; SAD_GetStoredInt
+    SAD_GetStoredInt_stdcall       @164  @736 ; SAD_GetStoredInt_stdcall
+    SAD_GetStoredString            @589  @737 ; SAD_GetStoredString
+    SAD_GetStoredString_stdcall    @159  @738 ; SAD_GetStoredString_stdcall
+    SAD_GetStrobeEnable            @590  @739 ; SAD_GetStrobeEnable
+    SAD_GetStrobeEnable_stdcall    @135  @740 ; SAD_GetStrobeEnable_stdcall
+    SAD_GetVersion                 @591  @741 ; SAD_GetVersion
+    SAD_GetVersion_stdcall         @129  @742 ; SAD_GetVersion_stdcall
+    SAD_IN_LVD                     @592  @743 ; SAD_IN_LVD
+    SAD_Init                       @593  @744 ; SAD_Init
+    SAD_Init_stdcall               @101  @745 ; SAD_Init_stdcall
+    SAD_ROOS_LVD                   @594  @746 ; SAD_ROOS_LVD
+    SAD_RSIM_LVD                   @595  @747 ; SAD_RSIM_LVD
+    SAD_RT_LVD                     @596  @748 ; SAD_RT_LVD
+    SAD_ReadSlowMemory             @597  @749 ; SAD_ReadSlowMemory
+    SAD_ReadSlowMemory_stdcall     @147  @750 ; SAD_ReadSlowMemory_stdcall
+    SAD_ReadoutOneScan             @598  @751 ; SAD_ReadoutOneScan
+    SAD_ReadoutOneScan_stdcall     @107  @752 ; SAD_ReadoutOneScan_stdcall
+    SAD_ReadoutScansInMemory       @599  @753 ; SAD_ReadoutScansInMemory
+    SAD_ReadoutScansInMemory_stdcall @105  @754 ; SAD_ReadoutScansInMemory_stdcall
+    SAD_Reset                      @604  @755 ; SAD_Reset
+    SAD_Reset_stdcall              @104  @756 ; SAD_Reset_stdcall
+    SAD_SADR_LVD                   @605  @757 ; SAD_SADR_LVD
+    SAD_SBR_LVD                    @606  @758 ; SAD_SBR_LVD
+    SAD_SBW_LVD                    @607  @759 ; SAD_SBW_LVD
+    SAD_SCDS_LVD                   @608  @760 ; SAD_SCDS_LVD
+    SAD_SCM_LVD                    @609  @761 ; SAD_SCM_LVD
+    SAD_SCSM_LVD                   @610  @762 ; SAD_SCSM_LVD
+    SAD_SC_LVD                     @611  @763 ; SAD_SC_LVD
+    SAD_SET_LVD                    @612  @764 ; SAD_SET_LVD
+    SAD_SIMP_LVD                   @613  @765 ; SAD_SIMP_LVD
+    SAD_SIT_LVD                    @614  @766 ; SAD_SIT_LVD
+    SAD_SNSTS_LVD                  @615  @767 ; SAD_SNSTS_LVD
+    SAD_SPM_LVD                    @616  @768 ; SAD_SPM_LVD
+    SAD_SROK_LVD                   @617  @769 ; SAD_SROK_LVD
+    SAD_SSC_LVD                    @618  @770 ; SAD_SSC_LVD
+    SAD_SSE_LVD                    @619  @771 ; SAD_SSE_LVD
+    SAD_SSF_LVD                    @620  @772 ; SAD_SSF_LVD
+    SAD_SSI_LVD                    @621  @773 ; SAD_SSI_LVD
+    SAD_SSM_LVD                    @622  @774 ; SAD_SSM_LVD
+    SAD_SSP_LVD                    @623  @775 ; SAD_SSP_LVD
+    SAD_SSS_LVD                    @624  @776 ; SAD_SSS_LVD
+    SAD_SSTA_LVD                   @625  @777 ; SAD_SSTA_LVD
+    SAD_SWA_LVD                    @626  @778 ; SAD_SWA_LVD
+    SAD_Scan                       @627  @779 ; SAD_Scan
+    SAD_ScanReceivedOK             @628  @780 ; SAD_ScanReceivedOK
+    SAD_ScanReceivedOK_stdcall     @103  @781 ; SAD_ScanReceivedOK_stdcall
+    SAD_ScanWithAverage            @629  @782 ; SAD_ScanWithAverage
+    SAD_ScanWithAverage_stdcall    @152  @783 ; SAD_ScanWithAverage_stdcall
+    SAD_Scan_stdcall               @106  @784 ; SAD_Scan_stdcall
+    SAD_SetADCRate                 @630  @785 ; SAD_SetADCRate
+    SAD_SetADCRate_stdcall         @117  @786 ; SAD_SetADCRate_stdcall
+    SAD_SetBaudRate                @631  @787 ; SAD_SetBaudRate
+    SAD_SetBaudRate_stdcall        @121  @788 ; SAD_SetBaudRate_stdcall
+    SAD_SetBoxcarWidth             @632  @789 ; SAD_SetBoxcarWidth
+    SAD_SetBoxcarWidth_stdcall     @116  @790 ; SAD_SetBoxcarWidth_stdcall
+    SAD_SetChecksumMode            @633  @791 ; SAD_SetChecksumMode
+    SAD_SetChecksumMode_stdcall    @157  @792 ; SAD_SetChecksumMode_stdcall
+    SAD_SetCompressedMode          @634  @793 ; SAD_SetCompressedMode
+    SAD_SetCompressedMode_stdcall  @154  @794 ; SAD_SetCompressedMode_stdcall
+    SAD_SetExternalTrigger         @635  @795 ; SAD_SetExternalTrigger
+    SAD_SetExternalTrigger_stdcall @125  @796 ; SAD_SetExternalTrigger_stdcall
+    SAD_SetFlashDelay              @636  @797 ; SAD_SetFlashDelay
+    SAD_SetFlashDelay_stdcall      @166  @798 ; SAD_SetFlashDelay_stdcall
+    SAD_SetIntegrationTime         @637  @799 ; SAD_SetIntegrationTime
+    SAD_SetIntegrationTime_stdcall @120  @800 ; SAD_SetIntegrationTime_stdcall
+    SAD_SetInterpolateMissingPixels @638  @801 ; SAD_SetInterpolateMissingPixels
+    SAD_SetInterpolateMissingPixels_stdcall @126  @802 ; SAD_SetInterpolateMissingPixels_stdcall
+    SAD_SetNumberOfScansToStore    @639  @803 ; SAD_SetNumberOfScansToStore
+    SAD_SetNumberOfScansToStore_stdcall @123  @804 ; SAD_SetNumberOfScansToStore_stdcall
+    SAD_SetPixelMode               @640  @805 ; SAD_SetPixelMode
+    SAD_SetPixelMode_stdcall       @124  @806 ; SAD_SetPixelMode_stdcall
+    SAD_SetRamanMode               @641  @807 ; SAD_SetRamanMode
+    SAD_SetRamanMode_stdcall       @167  @808 ; SAD_SetRamanMode_stdcall
+    SAD_SetS1024DWCDSMode          @642  @809 ; SAD_SetS1024DWCDSMode
+    SAD_SetS1024DWCDSMode_stdcall  @155  @810 ; SAD_SetS1024DWCDSMode_stdcall
+    SAD_SetScanMode                @643  @811 ; SAD_SetScanMode
+    SAD_SetScanMode_stdcall        @122  @812 ; SAD_SetScanMode_stdcall
+    SAD_SetScansToAdd              @644  @813 ; SAD_SetScansToAdd
+    SAD_SetScansToAdd_stdcall      @115  @814 ; SAD_SetScansToAdd_stdcall
+    SAD_SetSerialPort              @645  @815 ; SAD_SetSerialPort
+    SAD_SetSerialPort_stdcall      @113  @816 ; SAD_SetSerialPort_stdcall
+    SAD_SetSpectrometerChannel     @646  @817 ; SAD_SetSpectrometerChannel
+    SAD_SetSpectrometerChannel_stdcall @118  @818 ; SAD_SetSpectrometerChannel_stdcall
+    SAD_SetStoredFloat             @647  @819 ; SAD_SetStoredFloat
+    SAD_SetStoredFloat_stdcall     @161  @820 ; SAD_SetStoredFloat_stdcall
+    SAD_SetStoredInt               @648  @821 ; SAD_SetStoredInt
+    SAD_SetStoredInt_stdcall       @163  @822 ; SAD_SetStoredInt_stdcall
+    SAD_SetStoredString            @649  @823 ; SAD_SetStoredString
+    SAD_SetStoredString_stdcall    @160  @824 ; SAD_SetStoredString_stdcall
+    SAD_SetStrobeEnable            @650  @825 ; SAD_SetStrobeEnable
+    SAD_SetStrobeEnable_stdcall    @119  @826 ; SAD_SetStrobeEnable_stdcall
+    SAD_ToggleDebugMode            @651  @827 ; SAD_ToggleDebugMode
+    SAD_ToggleDebugMode_stdcall    @146  @828 ; SAD_ToggleDebugMode_stdcall
+    SAD_ToggleDebugPrintMode       @652  @829 ; SAD_ToggleDebugPrintMode
+    SAD_ToggleDebugPrintMode_stdcall @148  @830 ; SAD_ToggleDebugPrintMode_stdcall
+    SAS_IdentifySAS                @653  @831 ; SAS_IdentifySAS
+    SS_BufferEmpty                 @654  @832 ; SS_BufferEmpty
+    SS_Config                      @655  @833 ; SS_Config
+    SS_ContinuousScan              @656  @834 ; SS_ContinuousScan
+    SS_DoScan                      @657  @835 ; SS_DoScan
+    SS_ParamSet                    @658  @836 ; SS_ParamSet
+    SS_Register                    @659  @837 ; SS_Register
+    SS_SingleScan                  @660  @838 ; SS_SingleScan
+    SS_Stat                        @661  @839 ; SS_Stat
+    SS_Stop                        @662  @840 ; SS_Stop
+    SS_UnRegister                  @663  @841 ; SS_UnRegister
+    Shutdown_ADC2000PCI_S2000      @664  @842 ; Shutdown_ADC2000PCI_S2000
+    USB2000Plus_GetAutonullingSaturationValue @665  @843 ; USB2000Plus_GetAutonullingSaturationValue
+    USB2000Plus_GetAutonullingSaturationValue_stdcall @1566 @844 ; USB2000Plus_GetAutonullingSaturationValue_stdcall
+    USB2000Plus_GetBoardTemperature @666  @845 ; USB2000Plus_GetBoardTemperature
+    USB2000Plus_GetBoardTemperature_stdcall @1506 @846 ; USB2000Plus_GetBoardTemperature_stdcall
+    USB2000Plus_GetCoefficients    @667  @847 ; USB2000Plus_GetCoefficients
+    USB2000Plus_GetCoefficients_LVD @668  @848 ; USB2000Plus_GetCoefficients_LVD
+    USB2000Plus_GetCoefficients_stdcall @1504 @849 ; USB2000Plus_GetCoefficients_stdcall
+    USB2000Plus_GetContinuousStrobeBase @669  @850 ; USB2000Plus_GetContinuousStrobeBase
+    USB2000Plus_GetContinuousStrobeBaseTime @670  @851 ; USB2000Plus_GetContinuousStrobeBaseTime
+    USB2000Plus_GetContinuousStrobeBaseTime_stdcall @1559 @852 ; USB2000Plus_GetContinuousStrobeBaseTime_stdcall
+    USB2000Plus_GetContinuousStrobeBase_stdcall @1522 @853 ; USB2000Plus_GetContinuousStrobeBase_stdcall
+    USB2000Plus_GetContinuousStrobeClock @671  @854 ; USB2000Plus_GetContinuousStrobeClock
+    USB2000Plus_GetContinuousStrobeClock_stdcall @1524 @855 ; USB2000Plus_GetContinuousStrobeClock_stdcall
+    USB2000Plus_GetContinuousStrobeTime @672  @856 ; USB2000Plus_GetContinuousStrobeTime
+    USB2000Plus_GetContinuousStrobeTime_stdcall @1560 @857 ; USB2000Plus_GetContinuousStrobeTime_stdcall
+    USB2000Plus_GetFPGAFirmwareVersion @673  @858 ; USB2000Plus_GetFPGAFirmwareVersion
+    USB2000Plus_GetFPGAFirmwareVersion_stdcall @1521 @859 ; USB2000Plus_GetFPGAFirmwareVersion_stdcall
+    USB2000Plus_GetFirmwareVersion @674  @860 ; USB2000Plus_GetFirmwareVersion
+    USB2000Plus_GetFirmwareVersion_stdcall @1501 @861 ; USB2000Plus_GetFirmwareVersion_stdcall
+    USB2000Plus_GetGPIODataReg     @675  @862 ; USB2000Plus_GetGPIODataReg
+    USB2000Plus_GetGPIODataReg_stdcall @1554 @863 ; USB2000Plus_GetGPIODataReg_stdcall
+    USB2000Plus_GetGPIOIO          @676  @864 ; USB2000Plus_GetGPIOIO
+    USB2000Plus_GetGPIOIO_stdcall  @1547 @865 ; USB2000Plus_GetGPIOIO_stdcall
+    USB2000Plus_GetGPIOMux         @677  @866 ; USB2000Plus_GetGPIOMux
+    USB2000Plus_GetGPIOMux_stdcall @1542 @867 ; USB2000Plus_GetGPIOMux_stdcall
+    USB2000Plus_GetGPIOPinData     @678  @868 ; USB2000Plus_GetGPIOPinData
+    USB2000Plus_GetGPIOPinData_stdcall @1555 @869 ; USB2000Plus_GetGPIOPinData_stdcall
+    USB2000Plus_GetGPIOPinIO       @679  @870 ; USB2000Plus_GetGPIOPinIO
+    USB2000Plus_GetGPIOPinIO_stdcall @1549 @871 ; USB2000Plus_GetGPIOPinIO_stdcall
+    USB2000Plus_GetGPIOPinMux      @680  @872 ; USB2000Plus_GetGPIOPinMux
+    USB2000Plus_GetGPIOPinMux_stdcall @1546 @873 ; USB2000Plus_GetGPIOPinMux_stdcall
+    USB2000Plus_GetHardwareTriggerDelay @681  @874 ; USB2000Plus_GetHardwareTriggerDelay
+    USB2000Plus_GetHardwareTriggerDelayTime @682  @875 ; USB2000Plus_GetHardwareTriggerDelayTime
+    USB2000Plus_GetHardwareTriggerDelayTime_stdcall @1561 @876 ; USB2000Plus_GetHardwareTriggerDelayTime_stdcall
+    USB2000Plus_GetHardwareTriggerDelay_stdcall @1532 @877 ; USB2000Plus_GetHardwareTriggerDelay_stdcall
+    USB2000Plus_GetHardwareTriggerMode @683  @878 ; USB2000Plus_GetHardwareTriggerMode
+    USB2000Plus_GetHardwareTriggerMode_stdcall @1534 @879 ; USB2000Plus_GetHardwareTriggerMode_stdcall
+    USB2000Plus_GetIntegrationClockTime @684  @880 ; USB2000Plus_GetIntegrationClockTime
+    USB2000Plus_GetIntegrationClockTime_stdcall @1558 @881 ; USB2000Plus_GetIntegrationClockTime_stdcall
+    USB2000Plus_GetIntegrationClockTimer @685  @882 ; USB2000Plus_GetIntegrationClockTimer
+    USB2000Plus_GetIntegrationClockTimer_stdcall @1528 @883 ; USB2000Plus_GetIntegrationClockTimer_stdcall
+    USB2000Plus_GetIntegrationTimeBaseClock @686  @884 ; USB2000Plus_GetIntegrationTimeBaseClock
+    USB2000Plus_GetIntegrationTimeBaseClock_stdcall @1526 @885 ; USB2000Plus_GetIntegrationTimeBaseClock_stdcall
+    USB2000Plus_GetLastAutonullingDarkValue @687  @886 ; USB2000Plus_GetLastAutonullingDarkValue
+    USB2000Plus_GetLastAutonullingDarkValue_stdcall @1565 @887 ; USB2000Plus_GetLastAutonullingDarkValue_stdcall
+    USB2000Plus_GetLastAutonullingStatusValue @688  @888 ; USB2000Plus_GetLastAutonullingStatusValue
+    USB2000Plus_GetLastAutonullingStatusValue_stdcall @1564 @889 ; USB2000Plus_GetLastAutonullingStatusValue_stdcall
+    USB2000Plus_GetMasterClockDivisor @689  @890 ; USB2000Plus_GetMasterClockDivisor
+    USB2000Plus_GetMasterClockDivisor_stdcall @1519 @891 ; USB2000Plus_GetMasterClockDivisor_stdcall
+    USB2000Plus_GetMasterClockTime @690  @892 ; USB2000Plus_GetMasterClockTime
+    USB2000Plus_GetMasterClockTime_stdcall @1557 @893 ; USB2000Plus_GetMasterClockTime_stdcall
+    USB2000Plus_GetPSOCVersion     @691  @894 ; USB2000Plus_GetPSOCVersion
+    USB2000Plus_GetPSOCVersion_stdcall @1516 @895 ; USB2000Plus_GetPSOCVersion_stdcall
+    USB2000Plus_GetShutterClock    @692  @896 ; USB2000Plus_GetShutterClock
+    USB2000Plus_GetShutterClock_stdcall @1530 @897 ; USB2000Plus_GetShutterClock_stdcall
+    USB2000Plus_GetSingleStrobeHigh @693  @898 ; USB2000Plus_GetSingleStrobeHigh
+    USB2000Plus_GetSingleStrobeHighTime @694  @899 ; USB2000Plus_GetSingleStrobeHighTime
+    USB2000Plus_GetSingleStrobeHighTime_stdcall @1562 @900 ; USB2000Plus_GetSingleStrobeHighTime_stdcall
+    USB2000Plus_GetSingleStrobeHigh_stdcall @1536 @901 ; USB2000Plus_GetSingleStrobeHigh_stdcall
+    USB2000Plus_GetSingleStrobeLow @695  @902 ; USB2000Plus_GetSingleStrobeLow
+    USB2000Plus_GetSingleStrobeLowTime @696  @903 ; USB2000Plus_GetSingleStrobeLowTime
+    USB2000Plus_GetSingleStrobeLowTime_stdcall @1563 @904 ; USB2000Plus_GetSingleStrobeLowTime_stdcall
+    USB2000Plus_GetSingleStrobeLow_stdcall @1538 @905 ; USB2000Plus_GetSingleStrobeLow_stdcall
+    USB2000Plus_GetStoredString    @697  @906 ; USB2000Plus_GetStoredString
+    USB2000Plus_GetStoredString_stdcall @1503 @907 ; USB2000Plus_GetStoredString_stdcall
+    USB2000Plus_GetStrobeEnableFPGA @698  @908 ; USB2000Plus_GetStrobeEnableFPGA
+    USB2000Plus_GetStrobeEnableFPGA_stdcall @1540 @909 ; USB2000Plus_GetStrobeEnableFPGA_stdcall
+    USB2000Plus_IdentifyUSB2000Plus @699  @910 ; USB2000Plus_IdentifyUSB2000Plus
+    USB2000Plus_IdentifyUSB2000Plus_stdcall @1500 @911 ; USB2000Plus_IdentifyUSB2000Plus_stdcall
+    USB2000Plus_ReadAnalogInput    @706  @912 ; USB2000Plus_ReadAnalogInput
+    USB2000Plus_ReadAnalogInputVoltage @707  @913 ; USB2000Plus_ReadAnalogInputVoltage
+    USB2000Plus_ReadAnalogInputVoltage_stdcall @1513 @914 ; USB2000Plus_ReadAnalogInputVoltage_stdcall
+    USB2000Plus_ReadAnalogInput_stdcall @1512 @915 ; USB2000Plus_ReadAnalogInput_stdcall
+    USB2000Plus_ReadFPGA           @708  @916 ; USB2000Plus_ReadFPGA
+    USB2000Plus_ReadFPGA_stdcall   @1518 @917 ; USB2000Plus_ReadFPGA_stdcall
+    USB2000Plus_ReadI2C            @709  @918 ; USB2000Plus_ReadI2C
+    USB2000Plus_ReadI2C_stdcall    @1509 @919 ; USB2000Plus_ReadI2C_stdcall
+    USB2000Plus_ReadSPI            @710  @920 ; USB2000Plus_ReadSPI
+    USB2000Plus_ReadSPI_stdcall    @1511 @921 ; USB2000Plus_ReadSPI_stdcall
+    USB2000Plus_SetAnalogOutput    @711  @922 ; USB2000Plus_SetAnalogOutput
+    USB2000Plus_SetAnalogOutputVoltage @712  @923 ; USB2000Plus_SetAnalogOutputVoltage
+    USB2000Plus_SetAnalogOutputVoltage_stdcall @1515 @924 ; USB2000Plus_SetAnalogOutputVoltage_stdcall
+    USB2000Plus_SetAnalogOutput_stdcall @1514 @925 ; USB2000Plus_SetAnalogOutput_stdcall
+    USB2000Plus_SetCoefficients    @713  @926 ; USB2000Plus_SetCoefficients
+    USB2000Plus_SetCoefficients_LVD @714  @927 ; USB2000Plus_SetCoefficients_LVD
+    USB2000Plus_SetCoefficients_stdcall @1505 @928 ; USB2000Plus_SetCoefficients_stdcall
+    USB2000Plus_SetContinuousStrobeBase @715  @929 ; USB2000Plus_SetContinuousStrobeBase
+    USB2000Plus_SetContinuousStrobeBase_stdcall @1523 @930 ; USB2000Plus_SetContinuousStrobeBase_stdcall
+    USB2000Plus_SetContinuousStrobeClock @716  @931 ; USB2000Plus_SetContinuousStrobeClock
+    USB2000Plus_SetContinuousStrobeClock_stdcall @1525 @932 ; USB2000Plus_SetContinuousStrobeClock_stdcall
+    USB2000Plus_SetGPIODataReg     @717  @933 ; USB2000Plus_SetGPIODataReg
+    USB2000Plus_SetGPIODataReg_stdcall @1553 @934 ; USB2000Plus_SetGPIODataReg_stdcall
+    USB2000Plus_SetGPIOIO          @718  @935 ; USB2000Plus_SetGPIOIO
+    USB2000Plus_SetGPIOIO_stdcall  @1548 @936 ; USB2000Plus_SetGPIOIO_stdcall
+    USB2000Plus_SetGPIOMux         @719  @937 ; USB2000Plus_SetGPIOMux
+    USB2000Plus_SetGPIOMuxAlt      @720  @938 ; USB2000Plus_SetGPIOMuxAlt
+    USB2000Plus_SetGPIOMuxAlt_stdcall @1545 @939 ; USB2000Plus_SetGPIOMuxAlt_stdcall
+    USB2000Plus_SetGPIOMuxReg      @721  @940 ; USB2000Plus_SetGPIOMuxReg
+    USB2000Plus_SetGPIOMuxReg_stdcall @1544 @941 ; USB2000Plus_SetGPIOMuxReg_stdcall
+    USB2000Plus_SetGPIOMux_stdcall @1543 @942 ; USB2000Plus_SetGPIOMux_stdcall
+    USB2000Plus_SetGPIOPinData     @722  @943 ; USB2000Plus_SetGPIOPinData
+    USB2000Plus_SetGPIOPinData_stdcall @1556 @944 ; USB2000Plus_SetGPIOPinData_stdcall
+    USB2000Plus_SetGPIOPinIO       @723  @945 ; USB2000Plus_SetGPIOPinIO
+    USB2000Plus_SetGPIOPinIO_stdcall @1550 @946 ; USB2000Plus_SetGPIOPinIO_stdcall
+    USB2000Plus_SetGPIOPinInput    @724  @947 ; USB2000Plus_SetGPIOPinInput
+    USB2000Plus_SetGPIOPinInput_stdcall @1552 @948 ; USB2000Plus_SetGPIOPinInput_stdcall
+    USB2000Plus_SetGPIOPinOutput   @725  @949 ; USB2000Plus_SetGPIOPinOutput
+    USB2000Plus_SetGPIOPinOutput_stdcall @1551 @950 ; USB2000Plus_SetGPIOPinOutput_stdcall
+    USB2000Plus_SetHardwareTriggerDelay @726  @951 ; USB2000Plus_SetHardwareTriggerDelay
+    USB2000Plus_SetHardwareTriggerDelay_stdcall @1533 @952 ; USB2000Plus_SetHardwareTriggerDelay_stdcall
+    USB2000Plus_SetHardwareTriggerMode @727  @953 ; USB2000Plus_SetHardwareTriggerMode
+    USB2000Plus_SetHardwareTriggerMode_stdcall @1535 @954 ; USB2000Plus_SetHardwareTriggerMode_stdcall
+    USB2000Plus_SetIntegrationClockTimer @728  @955 ; USB2000Plus_SetIntegrationClockTimer
+    USB2000Plus_SetIntegrationClockTimer_stdcall @1529 @956 ; USB2000Plus_SetIntegrationClockTimer_stdcall
+    USB2000Plus_SetIntegrationTimeBaseClock @729  @957 ; USB2000Plus_SetIntegrationTimeBaseClock
+    USB2000Plus_SetIntegrationTimeBaseClock_stdcall @1527 @958 ; USB2000Plus_SetIntegrationTimeBaseClock_stdcall
+    USB2000Plus_SetMasterClockDivisor @730  @959 ; USB2000Plus_SetMasterClockDivisor
+    USB2000Plus_SetMasterClockDivisor_stdcall @1520 @960 ; USB2000Plus_SetMasterClockDivisor_stdcall
+    USB2000Plus_SetPowerDown       @731  @961 ; USB2000Plus_SetPowerDown
+    USB2000Plus_SetPowerDown_stdcall @1507 @962 ; USB2000Plus_SetPowerDown_stdcall
+    USB2000Plus_SetShutterClock    @732  @963 ; USB2000Plus_SetShutterClock
+    USB2000Plus_SetShutterClock_stdcall @1531 @964 ; USB2000Plus_SetShutterClock_stdcall
+    USB2000Plus_SetSingleStrobeHigh @733  @965 ; USB2000Plus_SetSingleStrobeHigh
+    USB2000Plus_SetSingleStrobeHigh_stdcall @1537 @966 ; USB2000Plus_SetSingleStrobeHigh_stdcall
+    USB2000Plus_SetSingleStrobeLow @734  @967 ; USB2000Plus_SetSingleStrobeLow
+    USB2000Plus_SetSingleStrobeLow_stdcall @1539 @968 ; USB2000Plus_SetSingleStrobeLow_stdcall
+    USB2000Plus_SetStoredString    @735  @969 ; USB2000Plus_SetStoredString
+    USB2000Plus_SetStoredString_stdcall @1502 @970 ; USB2000Plus_SetStoredString_stdcall
+    USB2000Plus_SetStrobeEnableFPGA @736  @971 ; USB2000Plus_SetStrobeEnableFPGA
+    USB2000Plus_SetStrobeEnableFPGA_stdcall @1541 @972 ; USB2000Plus_SetStrobeEnableFPGA_stdcall
+    USB2000Plus_WriteFPGA          @737  @973 ; USB2000Plus_WriteFPGA
+    USB2000Plus_WriteFPGA_stdcall  @1517 @974 ; USB2000Plus_WriteFPGA_stdcall
+    USB2000Plus_WriteI2C           @738  @975 ; USB2000Plus_WriteI2C
+    USB2000Plus_WriteI2C_stdcall   @1508 @976 ; USB2000Plus_WriteI2C_stdcall
+    USB2000Plus_WriteSPI           @739  @977 ; USB2000Plus_WriteSPI
+    USB2000Plus_WriteSPI_stdcall   @1510 @978 ; USB2000Plus_WriteSPI_stdcall
+    USB2000_GetCoefficients        @740  @979 ; USB2000_GetCoefficients
+    USB2000_GetCoefficients_stdcall @400  @980 ; USB2000_GetCoefficients_stdcall
+    USB2000_GetFirmwareVersion     @741  @981 ; USB2000_GetFirmwareVersion
+    USB2000_GetFirmwareVersion_stdcall @403  @982 ; USB2000_GetFirmwareVersion_stdcall
+    USB2000_GetLS450Modulation     @742  @983 ; USB2000_GetLS450Modulation
+    USB2000_GetLS450Modulation_stdcall @409  @984 ; USB2000_GetLS450Modulation_stdcall
+    USB2000_GetO2CalibrationCoefficients @743  @985 ; USB2000_GetO2CalibrationCoefficients
+    USB2000_GetO2CalibrationCoefficients_stdcall @407  @986 ; USB2000_GetO2CalibrationCoefficients_stdcall
+    USB2000_GetStoredString        @744  @987 ; USB2000_GetStoredString
+    USB2000_GetStoredString_stdcall @405  @988 ; USB2000_GetStoredString_stdcall
+    USB2000_GetTemperature         @745  @989 ; USB2000_GetTemperature
+    USB2000_GetTemperatureCoefficients @746  @990 ; USB2000_GetTemperatureCoefficients
+    USB2000_GetTemperatureCoefficients_stdcall @412  @991 ; USB2000_GetTemperatureCoefficients_stdcall
+    USB2000_GetTemperature_stdcall @411  @992 ; USB2000_GetTemperature_stdcall
+    USB2000_I2C_Read               @423  @993 ; USB2000_I2C_Read
+    USB2000_I2C_Write              @424  @994 ; USB2000_I2C_Write
+    USB2000_ISSUV_GetLampOn        @749  @995 ; USB2000_ISSUV_GetLampOn
+    USB2000_ISSUV_GetUVLampIntensity @750  @996 ; USB2000_ISSUV_GetUVLampIntensity
+    USB2000_ISSUV_GetUVLampIntensity_stdcall @422  @997 ; USB2000_ISSUV_GetUVLampIntensity_stdcall
+    USB2000_ISSUV_GetVisLampIntensity @751  @998 ; USB2000_ISSUV_GetVisLampIntensity
+    USB2000_ISSUV_GetVisLampIntensity_stdcall @420  @999 ; USB2000_ISSUV_GetVisLampIntensity_stdcall
+    USB2000_ISSUV_GetVisLampOn     @752  @1000; USB2000_ISSUV_GetVisLampOn
+    USB2000_ISSUV_LampOn           @753  @1001; USB2000_ISSUV_LampOn
+    USB2000_ISSUV_LampOn_stdcall   @415  @1002; USB2000_ISSUV_LampOn_stdcall
+    USB2000_ISSUV_SetShutterOpened @754  @1003; USB2000_ISSUV_SetShutterOpened
+    USB2000_ISSUV_SetShutterOpened_stdcall @417  @1004; USB2000_ISSUV_SetShutterOpened_stdcall
+    USB2000_ISSUV_SetUVLampIntensity @755  @1005; USB2000_ISSUV_SetUVLampIntensity
+    USB2000_ISSUV_SetUVLampIntensity_stdcall @421  @1006; USB2000_ISSUV_SetUVLampIntensity_stdcall
+    USB2000_ISSUV_SetVisLampIntensity @756  @1007; USB2000_ISSUV_SetVisLampIntensity
+    USB2000_ISSUV_SetVisLampIntensity_stdcall @419  @1008; USB2000_ISSUV_SetVisLampIntensity_stdcall
+    USB2000_ISSUV_SetVisLampOn     @757  @1009; USB2000_ISSUV_SetVisLampOn
+    USB2000_ISSUV_SetVisLampOn_stdcall @416  @1010; USB2000_ISSUV_SetVisLampOn_stdcall
+    USB2000_ISSUV_StoreCurrentPotValues @758  @1011; USB2000_ISSUV_StoreCurrentPotValues
+    USB2000_ISSUV_StoreCurrentPotValues_stdcall @418  @1012; USB2000_ISSUV_StoreCurrentPotValues_stdcall
+    USB2000_IdentifyUSB2000        @759  @1013; USB2000_IdentifyUSB2000
+    USB2000_IdentifyUSB2000_stdcall @402  @1014; USB2000_IdentifyUSB2000_stdcall
+    USB2000_IsPluginDetected       @760  @1015; USB2000_IsPluginDetected
+    USB2000_IsPluginDetected_stdcall @410  @1016; USB2000_IsPluginDetected_stdcall
+    USB2000_ReadFloatArray         @761  @1017; USB2000_ReadFloatArray
+    USB2000_SetCoefficients        @762  @1018; USB2000_SetCoefficients
+    USB2000_SetCoefficients_stdcall @401  @1019; USB2000_SetCoefficients_stdcall
+    USB2000_SetLS450DA             @763  @1020; USB2000_SetLS450DA
+    USB2000_SetLS450DA_stdcall     @414  @1021; USB2000_SetLS450DA_stdcall
+    USB2000_SetLS450Modulation     @764  @1022; USB2000_SetLS450Modulation
+    USB2000_SetLS450Modulation_stdcall @408  @1023; USB2000_SetLS450Modulation_stdcall
+    USB2000_SetO2CalibrationCoefficients @765  @1024; USB2000_SetO2CalibrationCoefficients
+    USB2000_SetO2CalibrationCoefficients_stdcall @406  @1025; USB2000_SetO2CalibrationCoefficients_stdcall
+    USB2000_SetStoredString        @766  @1026; USB2000_SetStoredString
+    USB2000_SetStoredString_stdcall @404  @1027; USB2000_SetStoredString_stdcall
+    USB2000_SetTemperatureCoefficients @767  @1028; USB2000_SetTemperatureCoefficients
+    USB2000_SetTemperatureCoefficients_stdcall @413  @1029; USB2000_SetTemperatureCoefficients_stdcall
+    USB2000_WriteFloatArray        @768  @1030; USB2000_WriteFloatArray
+    USB4000_GetAutonullingSaturationValue @769  @1031; USB4000_GetAutonullingSaturationValue
+    USB4000_GetAutonullingSaturationValue_stdcall @1466 @1032; USB4000_GetAutonullingSaturationValue_stdcall
+    USB4000_GetBoardTemperature    @770  @1033; USB4000_GetBoardTemperature
+    USB4000_GetBoardTemperature_stdcall @1406 @1034; USB4000_GetBoardTemperature_stdcall
+    USB4000_GetCoefficients        @771  @1035; USB4000_GetCoefficients
+    USB4000_GetCoefficients_LVD    @772  @1036; USB4000_GetCoefficients_LVD
+    USB4000_GetCoefficients_stdcall @1404 @1037; USB4000_GetCoefficients_stdcall
+    USB4000_GetContinuousStrobeBase @773  @1038; USB4000_GetContinuousStrobeBase
+    USB4000_GetContinuousStrobeBaseTime @774  @1039; USB4000_GetContinuousStrobeBaseTime
+    USB4000_GetContinuousStrobeBaseTime_stdcall @1459 @1040; USB4000_GetContinuousStrobeBaseTime_stdcall
+    USB4000_GetContinuousStrobeBase_stdcall @1422 @1041; USB4000_GetContinuousStrobeBase_stdcall
+    USB4000_GetContinuousStrobeClock @775  @1042; USB4000_GetContinuousStrobeClock
+    USB4000_GetContinuousStrobeClock_stdcall @1424 @1043; USB4000_GetContinuousStrobeClock_stdcall
+    USB4000_GetContinuousStrobeTime @776  @1044; USB4000_GetContinuousStrobeTime
+    USB4000_GetContinuousStrobeTime_stdcall @1460 @1045; USB4000_GetContinuousStrobeTime_stdcall
+    USB4000_GetExternalTemperatureCelsius @777  @1046; USB4000_GetExternalTemperatureCelsius
+    USB4000_GetFPGAFirmwareVersion @778  @1047; USB4000_GetFPGAFirmwareVersion
+    USB4000_GetFPGAFirmwareVersion_stdcall @1421 @1048; USB4000_GetFPGAFirmwareVersion_stdcall
+    USB4000_GetFirmwareVersion     @779  @1049; USB4000_GetFirmwareVersion
+    USB4000_GetFirmwareVersion_stdcall @1401 @1050; USB4000_GetFirmwareVersion_stdcall
+    USB4000_GetGPIODataReg         @780  @1051; USB4000_GetGPIODataReg
+    USB4000_GetGPIODataReg_stdcall @1454 @1052; USB4000_GetGPIODataReg_stdcall
+    USB4000_GetGPIOIO              @781  @1053; USB4000_GetGPIOIO
+    USB4000_GetGPIOIO_stdcall      @1447 @1054; USB4000_GetGPIOIO_stdcall
+    USB4000_GetGPIOMux             @782  @1055; USB4000_GetGPIOMux
+    USB4000_GetGPIOMux_stdcall     @1442 @1056; USB4000_GetGPIOMux_stdcall
+    USB4000_GetGPIOPinData         @783  @1057; USB4000_GetGPIOPinData
+    USB4000_GetGPIOPinData_stdcall @1455 @1058; USB4000_GetGPIOPinData_stdcall
+    USB4000_GetGPIOPinIO           @784  @1059; USB4000_GetGPIOPinIO
+    USB4000_GetGPIOPinIO_stdcall   @1449 @1060; USB4000_GetGPIOPinIO_stdcall
+    USB4000_GetGPIOPinMux          @785  @1061; USB4000_GetGPIOPinMux
+    USB4000_GetGPIOPinMux_stdcall  @1446 @1062; USB4000_GetGPIOPinMux_stdcall
+    USB4000_GetHardwareTriggerDelay @786  @1063; USB4000_GetHardwareTriggerDelay
+    USB4000_GetHardwareTriggerDelayTime @787  @1064; USB4000_GetHardwareTriggerDelayTime
+    USB4000_GetHardwareTriggerDelayTime_stdcall @1461 @1065; USB4000_GetHardwareTriggerDelayTime_stdcall
+    USB4000_GetHardwareTriggerDelay_stdcall @1432 @1066; USB4000_GetHardwareTriggerDelay_stdcall
+    USB4000_GetHardwareTriggerMode @788  @1067; USB4000_GetHardwareTriggerMode
+    USB4000_GetHardwareTriggerMode_stdcall @1434 @1068; USB4000_GetHardwareTriggerMode_stdcall
+    USB4000_GetIntegrationClockTime @789  @1069; USB4000_GetIntegrationClockTime
+    USB4000_GetIntegrationClockTime_stdcall @1458 @1070; USB4000_GetIntegrationClockTime_stdcall
+    USB4000_GetIntegrationClockTimer @790  @1071; USB4000_GetIntegrationClockTimer
+    USB4000_GetIntegrationClockTimer_stdcall @1428 @1072; USB4000_GetIntegrationClockTimer_stdcall
+    USB4000_GetIntegrationTimeBaseClock @791  @1073; USB4000_GetIntegrationTimeBaseClock
+    USB4000_GetIntegrationTimeBaseClock_stdcall @1426 @1074; USB4000_GetIntegrationTimeBaseClock_stdcall
+    USB4000_GetLS450Modulation     @792  @1075; USB4000_GetLS450Modulation
+    USB4000_GetLastAutonullingDarkValue @793  @1076; USB4000_GetLastAutonullingDarkValue
+    USB4000_GetLastAutonullingDarkValue_stdcall @1465 @1077; USB4000_GetLastAutonullingDarkValue_stdcall
+    USB4000_GetLastAutonullingStatusValue @794  @1078; USB4000_GetLastAutonullingStatusValue
+    USB4000_GetLastAutonullingStatusValue_stdcall @1464 @1079; USB4000_GetLastAutonullingStatusValue_stdcall
+    USB4000_GetMasterClockDivisor  @795  @1080; USB4000_GetMasterClockDivisor
+    USB4000_GetMasterClockDivisor_stdcall @1419 @1081; USB4000_GetMasterClockDivisor_stdcall
+    USB4000_GetMasterClockTime     @796  @1082; USB4000_GetMasterClockTime
+    USB4000_GetMasterClockTime_stdcall @1457 @1083; USB4000_GetMasterClockTime_stdcall
+    USB4000_GetO2ProbeCalibrationCoefficients @797  @1084; USB4000_GetO2ProbeCalibrationCoefficients
+    USB4000_GetPSOCVersion         @798  @1085; USB4000_GetPSOCVersion
+    USB4000_GetPSOCVersion_stdcall @1416 @1086; USB4000_GetPSOCVersion_stdcall
+    USB4000_GetShutterClock        @799  @1087; USB4000_GetShutterClock
+    USB4000_GetShutterClock_stdcall @1430 @1088; USB4000_GetShutterClock_stdcall
+    USB4000_GetSingleStrobeHigh    @800  @1089; USB4000_GetSingleStrobeHigh
+    USB4000_GetSingleStrobeHighTime @801  @1090; USB4000_GetSingleStrobeHighTime
+    USB4000_GetSingleStrobeHighTime_stdcall @1462 @1091; USB4000_GetSingleStrobeHighTime_stdcall
+    USB4000_GetSingleStrobeHigh_stdcall @1436 @1092; USB4000_GetSingleStrobeHigh_stdcall
+    USB4000_GetSingleStrobeLow     @802  @1093; USB4000_GetSingleStrobeLow
+    USB4000_GetSingleStrobeLowTime @803  @1094; USB4000_GetSingleStrobeLowTime
+    USB4000_GetSingleStrobeLowTime_stdcall @1463 @1095; USB4000_GetSingleStrobeLowTime_stdcall
+    USB4000_GetSingleStrobeLow_stdcall @1438 @1096; USB4000_GetSingleStrobeLow_stdcall
+    USB4000_GetStoredString        @804  @1097; USB4000_GetStoredString
+    USB4000_GetStoredString_stdcall @1403 @1098; USB4000_GetStoredString_stdcall
+    USB4000_GetStrobeEnableFPGA    @805  @1099; USB4000_GetStrobeEnableFPGA
+    USB4000_GetStrobeEnableFPGA_stdcall @1440 @1100; USB4000_GetStrobeEnableFPGA_stdcall
+    USB4000_GetTemperatureCoefficient @806  @1101; USB4000_GetTemperatureCoefficient
+    USB4000_ISSUV_LampEnable       @807  @1102; USB4000_ISSUV_LampEnable
+    USB4000_ISSUV_LampEnable_stdcall @1467 @1103; USB4000_ISSUV_LampEnable_stdcall
+    USB4000_IdentifyUSB4000        @808  @1104; USB4000_IdentifyUSB4000
+    USB4000_IdentifyUSB4000_stdcall @1400 @1105; USB4000_IdentifyUSB4000_stdcall
+    USB4000_ReadAnalogInput        @809  @1106; USB4000_ReadAnalogInput
+    USB4000_ReadAnalogInputVoltage @810  @1107; USB4000_ReadAnalogInputVoltage
+    USB4000_ReadAnalogInputVoltage_stdcall @1413 @1108; USB4000_ReadAnalogInputVoltage_stdcall
+    USB4000_ReadAnalogInput_stdcall @1412 @1109; USB4000_ReadAnalogInput_stdcall
+    USB4000_ReadFPGA               @811  @1110; USB4000_ReadFPGA
+    USB4000_ReadFPGA_stdcall       @1418 @1111; USB4000_ReadFPGA_stdcall
+    USB4000_ReadI2C                @812  @1112; USB4000_ReadI2C
+    USB4000_ReadI2C_stdcall        @1409 @1113; USB4000_ReadI2C_stdcall
+    USB4000_ReadSPI                @813  @1114; USB4000_ReadSPI
+    USB4000_ReadSPI_stdcall        @1411 @1115; USB4000_ReadSPI_stdcall
+    USB4000_SetAnalogOutput        @814  @1116; USB4000_SetAnalogOutput
+    USB4000_SetAnalogOutputVoltage @815  @1117; USB4000_SetAnalogOutputVoltage
+    USB4000_SetAnalogOutputVoltage_stdcall @1415 @1118; USB4000_SetAnalogOutputVoltage_stdcall
+    USB4000_SetAnalogOutput_stdcall @1414 @1119; USB4000_SetAnalogOutput_stdcall
+    USB4000_SetCoefficients        @816  @1120; USB4000_SetCoefficients
+    USB4000_SetCoefficients_LVD    @817  @1121; USB4000_SetCoefficients_LVD
+    USB4000_SetCoefficients_stdcall @1405 @1122; USB4000_SetCoefficients_stdcall
+    USB4000_SetContinuousStrobeBase @818  @1123; USB4000_SetContinuousStrobeBase
+    USB4000_SetContinuousStrobeBase_stdcall @1423 @1124; USB4000_SetContinuousStrobeBase_stdcall
+    USB4000_SetContinuousStrobeClock @819  @1125; USB4000_SetContinuousStrobeClock
+    USB4000_SetContinuousStrobeClock_stdcall @1425 @1126; USB4000_SetContinuousStrobeClock_stdcall
+    USB4000_SetGPIODataReg         @820  @1127; USB4000_SetGPIODataReg
+    USB4000_SetGPIODataReg_stdcall @1453 @1128; USB4000_SetGPIODataReg_stdcall
+    USB4000_SetGPIOIO              @821  @1129; USB4000_SetGPIOIO
+    USB4000_SetGPIOIO_stdcall      @1448 @1130; USB4000_SetGPIOIO_stdcall
+    USB4000_SetGPIOMux             @822  @1131; USB4000_SetGPIOMux
+    USB4000_SetGPIOMuxAlt          @823  @1132; USB4000_SetGPIOMuxAlt
+    USB4000_SetGPIOMuxAlt_stdcall  @1445 @1133; USB4000_SetGPIOMuxAlt_stdcall
+    USB4000_SetGPIOMuxReg          @824  @1134; USB4000_SetGPIOMuxReg
+    USB4000_SetGPIOMuxReg_stdcall  @1444 @1135; USB4000_SetGPIOMuxReg_stdcall
+    USB4000_SetGPIOMux_stdcall     @1443 @1136; USB4000_SetGPIOMux_stdcall
+    USB4000_SetGPIOPinData         @825  @1137; USB4000_SetGPIOPinData
+    USB4000_SetGPIOPinData_stdcall @1456 @1138; USB4000_SetGPIOPinData_stdcall
+    USB4000_SetGPIOPinIO           @826  @1139; USB4000_SetGPIOPinIO
+    USB4000_SetGPIOPinIO_stdcall   @1450 @1140; USB4000_SetGPIOPinIO_stdcall
+    USB4000_SetGPIOPinInput        @827  @1141; USB4000_SetGPIOPinInput
+    USB4000_SetGPIOPinInput_stdcall @1452 @1142; USB4000_SetGPIOPinInput_stdcall
+    USB4000_SetGPIOPinOutput       @828  @1143; USB4000_SetGPIOPinOutput
+    USB4000_SetGPIOPinOutput_stdcall @1451 @1144; USB4000_SetGPIOPinOutput_stdcall
+    USB4000_SetHardwareTriggerDelay @829  @1145; USB4000_SetHardwareTriggerDelay
+    USB4000_SetHardwareTriggerDelay_stdcall @1433 @1146; USB4000_SetHardwareTriggerDelay_stdcall
+    USB4000_SetHardwareTriggerMode @830  @1147; USB4000_SetHardwareTriggerMode
+    USB4000_SetHardwareTriggerMode_stdcall @1435 @1148; USB4000_SetHardwareTriggerMode_stdcall
+    USB4000_SetIntegrationClockTimer @831  @1149; USB4000_SetIntegrationClockTimer
+    USB4000_SetIntegrationClockTimer_stdcall @1429 @1150; USB4000_SetIntegrationClockTimer_stdcall
+    USB4000_SetIntegrationTimeBaseClock @832  @1151; USB4000_SetIntegrationTimeBaseClock
+    USB4000_SetIntegrationTimeBaseClock_stdcall @1427 @1152; USB4000_SetIntegrationTimeBaseClock_stdcall
+    USB4000_SetLS450Da             @833  @1153; USB4000_SetLS450Da
+    USB4000_SetLS450Modulation     @834  @1154; USB4000_SetLS450Modulation
+    USB4000_SetMasterClockDivisor  @835  @1155; USB4000_SetMasterClockDivisor
+    USB4000_SetMasterClockDivisor_stdcall @1420 @1156; USB4000_SetMasterClockDivisor_stdcall
+    USB4000_SetO2ProbeCalibrationCoefficients @836  @1157; USB4000_SetO2ProbeCalibrationCoefficients
+    USB4000_SetPowerDown           @837  @1158; USB4000_SetPowerDown
+    USB4000_SetPowerDown_stdcall   @1407 @1159; USB4000_SetPowerDown_stdcall
+    USB4000_SetShutterClock        @838  @1160; USB4000_SetShutterClock
+    USB4000_SetShutterClock_stdcall @1431 @1161; USB4000_SetShutterClock_stdcall
+    USB4000_SetSingleStrobeHigh    @839  @1162; USB4000_SetSingleStrobeHigh
+    USB4000_SetSingleStrobeHigh_stdcall @1437 @1163; USB4000_SetSingleStrobeHigh_stdcall
+    USB4000_SetSingleStrobeLow     @840  @1164; USB4000_SetSingleStrobeLow
+    USB4000_SetSingleStrobeLow_stdcall @1439 @1165; USB4000_SetSingleStrobeLow_stdcall
+    USB4000_SetStoredString        @841  @1166; USB4000_SetStoredString
+    USB4000_SetStoredString_stdcall @1402 @1167; USB4000_SetStoredString_stdcall
+    USB4000_SetStrobeEnableFPGA    @842  @1168; USB4000_SetStrobeEnableFPGA
+    USB4000_SetStrobeEnableFPGA_stdcall @1441 @1169; USB4000_SetStrobeEnableFPGA_stdcall
+    USB4000_SetTemperatureCoefficients @843  @1170; USB4000_SetTemperatureCoefficients
+    USB4000_WriteFPGA              @844  @1171; USB4000_WriteFPGA
+    USB4000_WriteFPGA_stdcall      @1417 @1172; USB4000_WriteFPGA_stdcall
+    USB4000_WriteI2C               @845  @1173; USB4000_WriteI2C
+    USB4000_WriteI2C_stdcall       @1408 @1174; USB4000_WriteI2C_stdcall
+    USB4000_WriteSPI               @846  @1175; USB4000_WriteSPI
+    USB4000_WriteSPI_stdcall       @1410 @1176; USB4000_WriteSPI_stdcall
+    USBGEN_BulkIn                  @847  @1177; USBGEN_BulkIn
+    USBGEN_BulkIn_stdcall          @1101 @1178; USBGEN_BulkIn_stdcall
+    USBGEN_BulkOut                 @848  @1179; USBGEN_BulkOut
+    USBGEN_BulkOut_stdcall         @1100 @1180; USBGEN_BulkOut_stdcall
+    USBIISUV_ReadPotValues         @849  @1181; USBIISUV_ReadPotValues
+    USBISSUV_WritePotValue         @850  @1182; USBISSUV_WritePotValue
+    USB_GC_LVD                     @851  @1183; USB_GC_LVD
+    USB_GFV_LVD                    @852  @1184; USB_GFV_LVD
+    USB_GetStringDescriptor        @853  @1185; USB_GetStringDescriptor
+    USB_IHR_LVD                    @854  @1186; USB_IHR_LVD
+    USB_IU_LVD                     @855  @1187; USB_IU_LVD
+    USB_SC_LVD                     @856  @1188; USB_SC_LVD
+    QE65000_WriteFPGA_stdcall     = _QE65000_WriteFPGA_stdcall@8        
+    USB2000_I2C_Read_stdcall      = _USB2000_I2C_Read_stdcall@12        
+    USB2000_I2C_Write_stdcall     = _USB2000_I2C_Write_stdcall@12       

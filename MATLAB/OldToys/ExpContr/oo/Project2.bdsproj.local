@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>2009.08.22 23:10:39.062.cpp,C:\Dokumente und Einstellungen\kostya\Eigene Dateien\Borland Studio Projects\Unit2.cpp=C:\projects\oo\Unit2.cpp</Transaction>
+    <Transaction>2009.08.22 23:10:39.062.h,C:\Dokumente und Einstellungen\kostya\Eigene Dateien\Borland Studio Projects\Unit2.h=C:\projects\oo\Unit2.h</Transaction>
+    <Transaction>2009.08.22 23:10:39.062.dfm,C:\Dokumente und Einstellungen\kostya\Eigene Dateien\Borland Studio Projects\Unit2.dfm=C:\projects\oo\Unit2.dfm</Transaction>
+    <Transaction>2009.08.22 23:10:40.578.bdsproj,C:\Dokumente und Einstellungen\kostya\Eigene Dateien\Borland Studio Projects\Project2.bdsproj=C:\projects\oo\Project2.bdsproj</Transaction>
+  </Transactions>
+</BorlandProject>

@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 10.00
+# Visual Studio 2008
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "aha", "aha\aha.vcproj", "{4FFAE935-F2FA-44C5-BCA9-6F259ACBA7BB}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{C5A62C21-2340-49DD-91DC-47F7130FD3F3}"
+	ProjectSection(SolutionItems) = preProject
+		..\..\..\..\..\..\Program Files\National Instruments\NI-IMAQdx\lib\msvc\niimaqdx.lib = ..\..\..\..\..\..\Program Files\National Instruments\NI-IMAQdx\lib\msvc\niimaqdx.lib
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{4FFAE935-F2FA-44C5-BCA9-6F259ACBA7BB}.Debug|Win32.ActiveCfg = Debug|Win32
+		{4FFAE935-F2FA-44C5-BCA9-6F259ACBA7BB}.Debug|Win32.Build.0 = Debug|Win32
+		{4FFAE935-F2FA-44C5-BCA9-6F259ACBA7BB}.Release|Win32.ActiveCfg = Release|Win32
+		{4FFAE935-F2FA-44C5-BCA9-6F259ACBA7BB}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

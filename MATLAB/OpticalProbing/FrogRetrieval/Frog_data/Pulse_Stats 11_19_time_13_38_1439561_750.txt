@@ -1,0 +1,14 @@
+Pulse Statistics
+
+Pulse Width: 25.16 fs
+Bandwidth: 29.93 THz
+Bandwidth: 64.00 nm
+Auto Width: 35.78 fs
+TBW Product: 0.75
+  
+FROG Trace Error: 0.0059
+~~~~~~~~~~~~~~~~~~~~~~
+FT Tilt:   5.23e-01 nm/mm
+Spatial Chirp:  -1.69e+00 nm/mm
+Lambda Offset:  -7.12e+00 nm
+PFT:     1.22e-01 fs/mm

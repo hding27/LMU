@@ -1,0 +1,130 @@
+//---------------------------------------------------------------------------
+
+#include <windows.h>
+//---------------------------------------------------------------------------
+//   Important note about DLL memory management when your DLL uses the
+//   static version of the RunTime Library:
+//
+//   If your DLL exports any functions that pass String objects (or structs/
+//   classes containing nested Strings) as parameter or function results,
+//   you will need to add the library MEMMGR.LIB to both the DLL project and
+//   any other projects that use the DLL.  You will also need to use MEMMGR.LIB
+//   if any other projects which use the DLL will be performing new or delete
+//   operations on any non-TObject-derived classes which are exported from the
+//   DLL. Adding MEMMGR.LIB to your project will change the DLL and its calling
+//   EXE's to use the BORLNDMM.DLL as their memory manager.  In these cases,
+//   the file BORLNDMM.DLL should be deployed along with your DLL.
+//
+//   To avoid using BORLNDMM.DLL, pass string information using "char *" or
+//   ShortString parameters.
+//
+//   If your DLL uses the dynamic version of the RTL, you do not need to
+//   explicitly add MEMMGR.LIB as this will be done implicitly for you
+//---------------------------------------------------------------------------
+
+#pragma argsused
+
+extern "C" __declspec(dllexport) void __cdecl try1(long num, float* arr);
+
+BOOL WINAPI DllMain(HINSTANCE hinstDLL, DWORD fwdreason, LPVOID lpvReserved)
+{
+	return true;
+
+}
+
+
+
+
+__declspec(dllexport) void __cdecl try1(long num, float* arr){
+
+	static void (__stdcall *POOI_Config)(unsigned short spec,unsigned short adctype, unsigned short irq, unsigned short baseaddress);
+	static unsigned short (__cdecl *POOI_FS_LVD_32)(unsigned long* inputParam, float* data);
+	static long (__cdecl *POOI_DoScan_Array_Long)(long *inputParam, float* data);
+	static unsigned long (__cdecl  *POOI_SetCurrentUSBSerialNumber)(char* sn);
+	static double (__cdecl *PHR4000_GetIntegrationClockTime)(void);
+	static HINSTANCE ooLib = NULL;
+
+	POOI_Config=NULL;
+	POOI_FS_LVD_32=NULL;
+	POOI_SetCurrentUSBSerialNumber=NULL;
+
+	if(ooLib==NULL){
+		ooLib = LoadLibrary ("c:\\ooidrv32.DLL");
+
+	   if (ooLib==NULL)  {
+		  /*
+		   *    The LoadLibrary call failed, return with an error.
+		   */
+		  MessageBox(NULL,"Failed to load lib","error",MB_OK);
+		  return ;
+	   }
+
+
+
+
+	   POOI_Config  = (void (__stdcall *)(unsigned short, unsigned short, unsigned short, unsigned short))GetProcAddress(ooLib, (LPCSTR)"OOI_Config_stdcall");
+	   POOI_FS_LVD_32 = (unsigned short (__cdecl*)(unsigned long*, float*))GetProcAddress(ooLib,(LPCSTR)"OOI_FS_LVD_32");
+	   POOI_SetCurrentUSBSerialNumber = (unsigned long (__cdecl*)(char*))GetProcAddress(ooLib,(LPCSTR)"OOI_SetCurrentUSBSerialNumber");
+	   PHR4000_GetIntegrationClockTime= (double (__cdecl*)(void))GetProcAddress(ooLib,(LPCSTR)"OOI_GetIntegrationTime");
+
+	   if(POOI_Config==NULL){
+			MessageBox(NULL,"Did not find OOI_Config","Error",MB_OK);
+			FreeLibrary(ooLib);
+			return ;
+	   }
+
+	   if(POOI_FS_LVD_32==NULL){
+			MessageBox(NULL,"Did not find OOI_FS_LVD_32","Error",MB_OK);
+			FreeLibrary(ooLib);
+			return ;
+	   }
+
+	   if(POOI_SetCurrentUSBSerialNumber==NULL){
+			MessageBox(NULL,"Did not find OOI_SetCurrentUSBSerialNumber","Error",MB_OK);
+			FreeLibrary(ooLib);
+			return ;
+	   }
+	   if(PHR4000_GetIntegrationClockTime==NULL){
+			MessageBox(NULL,"Did not find HR4000_GetIntegrationClockTime","Error",MB_OK);
+			FreeLibrary(ooLib);
+			return ;
+	   }
+	(POOI_Config)(1536,12,7,768);
+	(POOI_SetCurrentUSBSerialNumber)("HR4C2050");
+
+	}
+
+	unsigned long inppar[18];
+	inppar[0]=0;	//Command
+	inppar[1]=0;	//Flash delay
+	inppar[2]=100;	//Sample Frequency
+	inppar[3]=0;	//Boxcar smoothing width
+	inppar[4]=1;	//Samples to average
+	inppar[5]=0;	//Scan Dark       (bool)
+	inppar[6]=0;	//Correct for electrical dark signal (bool)
+	inppar[7]=0;	//external trigger
+	inppar[8]=1;	//Enable Master Spectrometer (bool)
+	inppar[9]=0;	//Enable Slave 1 Spectrometer (bool)
+	inppar[10]=0;	//Enable Slave 2 Spectrometer (bool)
+	inppar[11]=0;	//Enable Slave 3 Spectrometer (bool)
+	inppar[12]=0;	//Enable Slave 4 Spectrometer (bool)
+	inppar[13]=0;	//Enable Slave 5 Spectrometer (bool)
+	inppar[14]=0;	//Enable Slave 6 Spectrometer (bool)
+	inppar[15]=0;	//Enable Slave 7 Spectrometer (bool)
+	inppar[16]=0;	//use uSec/Long Integration (bool)
+	inppar[17]=30000;	//uSec/Long Integration
+
+
+//	inppar[0]=1;
+//	(POOI_FS_LVD_32)(inppar,arr);
+//	inppar[0]=0;
+	(POOI_FS_LVD_32)(inppar,arr);
+
+	//FreeLibrary(ooLib);
+
+
+}
+
+//---------------------------------------------------------------------------
+
+//---------------------------------------------------------------------------

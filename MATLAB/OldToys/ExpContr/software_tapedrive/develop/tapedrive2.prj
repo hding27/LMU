@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project>
+  <!--tapedrive2.prj-->
+  <MATLABPath>
+    <Directory>C:\Documents and Settings\Admin\My Documents\MATLAB</Directory>
+    <Directory>D:\Program Files\MATLAB\R2007a\toolbox\matlab\general</Directory>
+    <Directory>D:\Program Files\MATLAB\R2007a\toolbox\matlab\ops</Directory>
+    <Directory>D:\Program Files\MATLAB\R2007a\toolbox\matlab\lang</Directory>
+    <Directory>D:\Program Files\MATLAB\R2007a\toolbox\matlab\elmat</Directory>
+    <Directory>D:\Program Files\MATLAB\R2007a\toolbox\matlab\elfun</Directory>
+    <Directory>D:\Program Files\MATLAB\R2007a\toolbox\matlab\specfun</Directory>
+    <Directory>D:\Program Files\MATLAB\R2007a\toolbox\matlab\matfun</Directory>
+    <Directory>D:\Program Files\MATLAB\R2007a\toolbox\matlab\datafun</Directory>
+    <Directory>D:\Program Files\MATLAB\R2007a\toolbox\matlab\polyfun</Directory>
+    <Directory>D:\Program Files\MATLAB\R2007a\toolbox\matlab\funfun</Directory>
+    <Directory>D:\Program Files\MATLAB\R2007a\toolbox\matlab\sparfun</Directory>
+    <Directory>D:\Program Files\MATLAB\R2007a\toolbox\matlab\scribe</Directory>
+    <Directory>D:\Program Files\MATLAB\R2007a\toolbox\matlab\graph2d</Directory>
+    <Directory>D:\Program Files\MATLAB\R2007a\toolbox\matlab\graph3d</Directory>
+    <Directory>D:\Program Files\MATLAB\R2007a\toolbox\matlab\specgraph</Directory>
+    <Directory>D:\Program Files\MATLAB\R2007a\toolbox\matlab\graphics</Directory>
+    <Directory>D:\Program Files\MATLAB\R2007a\toolbox\matlab\uitools</Directory>
+    <Directory>D:\Program Files\MATLAB\R2007a\toolbox\matlab\strfun</Directory>
+    <Directory>D:\Program Files\MATLAB\R2007a\toolbox\matlab\imagesci</Directory>
+    <Directory>D:\Program Files\MATLAB\R2007a\toolbox\matlab\iofun</Directory>
+    <Directory>D:\Program Files\MATLAB\R2007a\toolbox\matlab\audiovideo</Directory>
+    <Directory>D:\Program Files\MATLAB\R2007a\toolbox\matlab\timefun</Directory>
+    <Directory>D:\Program Files\MATLAB\R2007a\toolbox\matlab\datatypes</Directory>
+    <Directory>D:\Program Files\MATLAB\R2007a\toolbox\matlab\verctrl</Directory>
+    <Directory>D:\Program Files\MATLAB\R2007a\toolbox\matlab\codetools</Directory>
+    <Directory>D:\Program Files\MATLAB\R2007a\toolbox\matlab\helptools</Directory>
+    <Directory>D:\Program Files\MATLAB\R2007a\toolbox\matlab\winfun</Directory>
+    <Directory>D:\Program Files\MATLAB\R2007a\toolbox\matlab\demos</Directory>
+    <Directory>D:\Program Files\MATLAB\R2007a\toolbox\matlab\timeseries</Directory>
+    <Directory>D:\Program Files\MATLAB\R2007a\toolbox\matlab\hds</Directory>
+    <Directory>D:\Program Files\MATLAB\R2007a\toolbox\matlab\guide</Directory>
+    <Directory>D:\Program Files\MATLAB\R2007a\toolbox\matlab\plottools</Directory>
+    <Directory>D:\Program Files\MATLAB\R2007a\toolbox\local</Directory>
+    <Directory>D:\Program Files\MATLAB\R2007a\toolbox\shared\controllib</Directory>
+    <Directory>D:\Program Files\MATLAB\R2007a\toolbox\compiler</Directory>
+    <Directory>D:\Program Files\MATLAB\R2007a\toolbox\control\control</Directory>
+    <Directory>D:\Program Files\MATLAB\R2007a\toolbox\control\ctrlguis</Directory>
+    <Directory>D:\Program Files\MATLAB\R2007a\toolbox\control\ctrlobsolete</Directory>
+    <Directory>D:\Program Files\MATLAB\R2007a\toolbox\control\ctrlutil</Directory>
+    <Directory>D:\Program Files\MATLAB\R2007a\toolbox\control\ctrldemos</Directory>
+    <Directory>D:\Program Files\MATLAB\R2007a\toolbox\shared\slcontrollib</Directory>
+    <Directory>D:\Program Files\MATLAB\R2007a\toolbox\optim\optim</Directory>
+    <Directory>D:\Program Files\MATLAB\R2007a\toolbox\optim\optimdemos</Directory>
+    <Directory>D:\Program Files\MATLAB\R2007a\toolbox\shared\optimlib</Directory>
+    <Directory>D:\Program Files\MATLAB\R2007a\toolbox\robust\robust</Directory>
+    <Directory>D:\Program Files\MATLAB\R2007a\toolbox\robust\rctlmi</Directory>
+    <Directory>D:\Program Files\MATLAB\R2007a\toolbox\robust\rctutil</Directory>
+    <Directory>D:\Program Files\MATLAB\R2007a\toolbox\robust\rctdemos</Directory>
+    <Directory>D:\Program Files\MATLAB\R2007a\toolbox\robust\rctobsolete\robust</Directory>
+    <Directory>D:\Program Files\MATLAB\R2007a\toolbox\robust\rctobsolete\lmi</Directory>
+    <Directory>D:\Program Files\MATLAB\R2007a\toolbox\robust\rctobsolete\mutools\commands</Directory>
+    <Directory>D:\Program Files\MATLAB\R2007a\toolbox\robust\rctobsolete\mutools\subs</Directory>
+    <Directory>D:\Program Files\MATLAB\R2007a\toolbox\symbolic</Directory>
+    <Directory>D:\Program Files\MATLAB\R2007a\work</Directory>
+  </MATLABPath>
+  <MCCProperties>
+    <output>tapedrive2</output>
+    <wrapper>
+      <type>main</type>
+    </wrapper>
+    <intermediate_dir>C:\Documents and Settings\Admin\My Documents\software_tapedrive\develop\tapedrive2\src</intermediate_dir>
+    <output_dir>C:\Documents and Settings\Admin\My Documents\software_tapedrive\develop\tapedrive2\distrib</output_dir>
+    <link>exe</link>
+    <MCR_runtime_options/>
+    <generate_code_only>false</generate_code_only>
+    <verbose>true</verbose>
+    <options_file/>
+    <debug>false</debug>
+    <toolboxes_on_path shortcut="all"/>
+    <warning shortcut="default">
+      <warn name="specified_file_mismatch">enable</warn>
+      <warn name="repeated_file">enable</warn>
+      <warn name="switch_ignored">enable</warn>
+      <warn name="missing_lib_sentinel">enable</warn>
+      <warn name="demo_license">enable</warn>
+    </warning>
+  </MCCProperties>
+  <file_info>
+    <category name="Main function">
+      <!--Do not modify the value of the name attribute, unless it is a class name.-->
+      <file>C:\Documents and Settings\Admin\My Documents\software_tapedrive\develop\tapedrive.m</file>
+    </category>
+    <category name="Other files">
+      <!--Do not modify the value of the name attribute, unless it is a class name.-->
+    </category>
+    <category name="C/C++ files">
+      <!--Do not modify the value of the name attribute, unless it is a class name.-->
+    </category>
+  </file_info>
+  <packaging>
+    <name>tapedrive2_pkg</name>
+    <mcr include="false"/>
+    <additional_files/>
+  </packaging>
+</project>

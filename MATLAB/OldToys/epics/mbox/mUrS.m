@@ -1,0 +1,135 @@
+function status = mUrS(obj1,obj2,s)
+
+
+status  = false;
+delta   = 500;
+global  mc;
+
+
+% check if com port is open
+if ~exist('mc','var')
+    fprintf('ERROR: COM port not open. Do nothing.\n');
+    return;
+end
+
+if ~strcmp(mc.Status,'open')
+    fprintf('ERROR: motor connection not initialized. Do nothing.\n');
+    return;
+end
+
+
+% check for valid argument
+if ~isnumeric(s)
+    disp('error: wrong argument');
+    return
+end
+
+
+update(obj1);
+update(obj2);
+
+
+start_pos_obj1 = obj1.P;
+start_pos_obj2 = obj2.P;
+
+
+
+if obj1.min || obj2.min
+    fprintf('endswitch reached (min). will not move\n');
+    return
+end
+
+if obj1.max || obj2.max
+    fprintf('endswitch reached (max). will not move\n');
+    return
+end
+
+
+% see if motor is initialized
+if obj1.isinit == true && strcmp(obj1.onoff,'on') ...
+        && obj2.isinit == true && strcmp(obj2.onoff,'on')
+    
+    
+    % adjust motor direction
+    if s < 0
+        llcmd(obj1,'d0');
+        llcmd(obj2,'d0');
+    else
+        llcmd(obj1,'d1');
+        llcmd(obj2,'d1');
+    end
+    
+    if s > 0
+        s_rest  = mod(s,delta);
+        N       = abs((s-s_rest) / delta);
+    else
+        s_rest  = mod(s,-delta);
+        N       = abs((s-s_rest) / delta);
+    end
+        
+    
+    % set stepsize
+    llcmd(obj1,strcat('s',num2str(delta)));
+    llcmd(obj2,strcat('s',num2str(delta)));
+    
+    
+    % start status message
+    ii = 0;
+    fprintf('move motor %i and %i.\n\t', obj1.N, obj2.N);
+    
+    for jj=1:(N+1)
+        
+        if jj>N
+            % set stepsize
+            llcmd(obj1,strcat('s',num2str(abs(s_rest))));
+            llcmd(obj2,strcat('s',num2str(abs(s_rest))));
+        end
+    
+        % move motor
+        if llcmd(obj1,'A'),
+            llcmd(obj2,'A');
+        end
+    
+   
+        % wait while motor is moving
+        while llget(obj1,'$') == 160 || llget(obj2,'$') == 160
+
+            % wait
+            pause(0.05);
+
+            % status update
+            ii = ii + 1;
+            %if mod(ii,10) == 0, fprintf('.'); end
+            fprintf('.');
+            if mod(ii,10) == 0
+                fprintf('motor %i: %i, motor %i: %i\n\t',...
+                    obj1.N,llget(obj1,'C'),...
+                    obj2.N,llget(obj2,'C'));
+            end
+        end
+        
+        update(obj1);
+        update(obj2);
+        
+        if ((obj1.P-start_pos_obj1) ~= (obj2.P - start_pos_obj2)) ...
+                && ~obj1.min && ~obj1.max...
+                && ~obj2.min && ~obj2.max
+            fprintf('fatal error. motors not syncron. break.\n');
+            break;
+        end
+    end
+    
+    fprintf('\ndone.\n');
+    status = true;
+    
+else
+    
+    % error message
+    fprintf('error moving motor %i\n\tmotor.init: %i\n\tmotor.onoff: %s\n',...
+        obj1.N, obj1.isinit, obj1.onoff);
+    fprintf('error moving motor %i\n\tmotor.init: %i\n\tmotor.onoff: %s\n',...
+        obj2.N, obj2.isinit, obj2.onoff);
+end
+
+
+end

@@ -1,0 +1,32 @@
+C:\Documents and Settings\Admin\Local Settings\Application Data\Temporary Projects\windowmover\obj\Debug\ResolveAssemblyReference.cache
+C:\Documents and Settings\Admin\Local Settings\Application Data\Temporary Projects\windowmover\obj\Debug\windowmover.Form1.resources
+C:\Documents and Settings\Admin\Local Settings\Application Data\Temporary Projects\windowmover\obj\Debug\windowmover.Properties.Resources.resources
+C:\Documents and Settings\Admin\Local Settings\Application Data\Temporary Projects\windowmover\obj\Debug\windowmover.csproj.GenerateResource.Cache
+C:\Documents and Settings\Admin\Local Settings\Application Data\Temporary Projects\windowmover\bin\Debug\windowmover.exe
+C:\Documents and Settings\Admin\Local Settings\Application Data\Temporary Projects\windowmover\bin\Debug\windowmover.pdb
+C:\Documents and Settings\Admin\Local Settings\Application Data\Temporary Projects\windowmover\obj\Debug\windowmover.exe
+C:\Documents and Settings\Admin\Local Settings\Application Data\Temporary Projects\windowmover\obj\Debug\windowmover.pdb
+C:\Documents and Settings\Admin\My Documents\Visual Studio 2008\Projects\windowmover\windowmover\obj\Debug\windowmover.exe
+C:\Documents and Settings\Admin\My Documents\Visual Studio 2008\Projects\windowmover\windowmover\obj\Debug\windowmover.pdb
+C:\Documents and Settings\Admin\My Documents\Visual Studio 2008\Projects\windowmover\windowmover\bin\Debug\windowmover.exe
+C:\Documents and Settings\Admin\My Documents\Visual Studio 2008\Projects\windowmover\windowmover\bin\Debug\windowmover.pdb
+C:\Documents and Settings\Admin\My Documents\Visual Studio 2008\Projects\windowmover\windowmover\obj\Debug\ResolveAssemblyReference.cache
+C:\Documents and Settings\Admin\My Documents\Visual Studio 2008\Projects\windowmover\windowmover\obj\Debug\windowmover.Form1.resources
+C:\Documents and Settings\Admin\My Documents\Visual Studio 2008\Projects\windowmover\windowmover\obj\Debug\windowmover.Properties.Resources.resources
+C:\Documents and Settings\Admin\My Documents\Visual Studio 2008\Projects\windowmover\windowmover\obj\Debug\windowmover.csproj.GenerateResource.Cache
+C:\Documents and Settings\Admin\My Documents\Visual Studio 2008\Projects\e_bljied\windowmover\obj\Debug\windowmover.exe
+C:\Documents and Settings\Admin\My Documents\Visual Studio 2008\Projects\e_bljied\windowmover\obj\Debug\windowmover.pdb
+C:\Documents and Settings\Admin\My Documents\Visual Studio 2008\Projects\e_bljied\windowmover\obj\Debug\ResolveAssemblyReference.cache
+C:\Documents and Settings\Admin\My Documents\Visual Studio 2008\Projects\e_bljied\windowmover\obj\Debug\windowmover.Form1.resources
+C:\Documents and Settings\Admin\My Documents\Visual Studio 2008\Projects\e_bljied\windowmover\obj\Debug\windowmover.Properties.Resources.resources
+C:\Documents and Settings\Admin\My Documents\Visual Studio 2008\Projects\e_bljied\windowmover\obj\Debug\windowmover.csproj.GenerateResource.Cache
+C:\Documents and Settings\Admin\My Documents\Visual Studio 2008\Projects\e_bljied\windowmover\bin\Debug\windowmover.exe
+C:\Documents and Settings\Admin\My Documents\Visual Studio 2008\Projects\e_bljied\windowmover\bin\Debug\windowmover.pdb
+D:\ftp\things\e_bljied\windowmover\obj\Debug\windowmover.exe
+D:\ftp\things\e_bljied\windowmover\obj\Debug\windowmover.pdb
+D:\ftp\things\e_bljied\windowmover\bin\Debug\windowmover.exe
+D:\ftp\things\e_bljied\windowmover\bin\Debug\windowmover.pdb
+D:\ftp\things\e_bljied\windowmover\obj\Debug\ResolveAssemblyReference.cache
+D:\ftp\things\e_bljied\windowmover\obj\Debug\windowmover.Form1.resources
+D:\ftp\things\e_bljied\windowmover\obj\Debug\windowmover.Properties.Resources.resources
+D:\ftp\things\e_bljied\windowmover\obj\Debug\windowmover.csproj.GenerateResource.Cache

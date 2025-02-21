@@ -1,0 +1,1 @@
+test = a*exp(-x^2/2*sig^2);
